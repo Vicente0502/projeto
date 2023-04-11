@@ -1,23 +1,28 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     font-family: 'Times New Roman', Times, serif;
 }
 
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 40vh;
+}
+
 .intro-container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: justify;
-    margin: 2%;
-    padding: 15px;
-    width: 70%;
-    font-size: 18px;
+    grid-column-start: 1fr;
+    grid-column-end: 2fr;
+    background-color: #436fcf;
 }
 
 .video-container{
-    /* Realizar configurações de alinhamento  */
+    grid-column-start: 1;
+    grid-column-end: 4;
+    background-color: rgb(49, 49, 33);
 }
+/* 
 
 .button-landingpage{
     width: 400px;
@@ -38,4 +43,4 @@
     color: #ffaa00c4;
     border: #ffaa00c4;
     cursor: pointer;
-}
+} */
