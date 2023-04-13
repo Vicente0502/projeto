@@ -7,11 +7,35 @@
 
 .container{
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 40vh;
+    grid-template-rows: auto 1fr auto; /* Três linhas, com altura automática para o nav e footer */
+    grid-template-areas:
+        "nav" 
+        "main" 
+        "footer"; 
+    height: 100vh; 
 }
 
-.intro-container{
+.navbar {
+    grid-area: nav;
+    background-color: lightblue;
+    padding: 16px; 
+    
+}
+
+.main {
+    grid-area: main; 
+    background-color: lightgreen; 
+    padding: 16px; 
+}
+
+.footer {
+    grid-area: footer; 
+    background-color: lightcoral; 
+    padding: 16px; 
+}
+
+
+/* .intro-container{
     grid-column-start: 1fr;
     grid-column-end: 2fr;
     background-color: #436fcf;
@@ -21,7 +45,7 @@
     grid-column-start: 1;
     grid-column-end: 4;
     background-color: rgb(49, 49, 33);
-}
+} */
 /* 
 
 .button-landingpage{
