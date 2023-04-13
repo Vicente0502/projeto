@@ -92,11 +92,41 @@
     border: #ffaa00c4;
     cursor: pointer;
 }
-/*
+
 .sistema-container{
-    background-color: beige;
-    width: 80%;
-    height: 50vh;
     display: flex;
-    justify-content: center;
-}*/
+    top: 35px;
+    width: 90%;
+    height: 50vh;
+    margin: auto;
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+
+.sistema-container-txt{
+    display: inline-block;
+    width: 50%;
+    height: 50vh;
+    text-align: justify;
+    padding: 10px;
+}
+
+.sistema-container-txt > h1{
+    margin: 5px;
+    line-height: 50px;
+}
+
+.sistema-container-txt > p{
+    font-size: 1.2em;
+    line-height: 25px;
+}
+
+.sistema-container-img{
+    width: 50%;
+    height: 50vh;
+}
+
+.sistema-container-img > img{
+    width: 700px;
+    height: 350px;
+}
