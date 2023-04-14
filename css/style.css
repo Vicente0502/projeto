@@ -15,11 +15,70 @@
     height: 100vh; 
 }
 
-.navbar {
+.link-navbar {
+    color: #000;
+    text-decoration: none;
+    position: relative;
+    display: inline-flex;
+}
+.link-navbar::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 20px;
+    width: 100%;
+    height: 2.5px;
+    background-color: #ffaa00c4;
+    border-radius: 4px;
+    scale: 0 1;
+    transform-origin: right;
+    transition: scale 0.35s;
+}
+/*efeito ao passar o mouse nos links*/
+.link-navbar:hover::before{
+    scale: 1;
+    transform-origin: left;
+}
+/*configuração da logo na navbar*/
+.logo{
+    background-image: url('../icones/logo.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    height: 7vh;
+    width: 116px;
+}
+/*navbar container, definições de altura, posição, cor e etc*/
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Courier New', Courier, monospace;
+    background: #fff;
+    height: 10vh;
+    box-shadow: 0px 0px 3px rgba(112, 112, 112, 0.603);
+    padding: 5px;
+}
+/*lista contida na navbar, sem efeitos de lista na tag <ul>*/
+.navbar-list{
+    list-style: none;
+    display: flex;
+}
+/*caracteristicas da lista na tag <li>*/
+.navbar-list li{
+    letter-spacing: 0.5px;
+    margin-left: 32px;
+    font-size: 16px;
+}
+
+.navbar-list li:last-child{
+    margin-right: 15px;
+}
+
+.header {
     grid-area: nav;
-    /* background-color: lightblue; */
-    padding: 16px; 
-    
+    /* background-color: lightblue;  */
 }
 
 .main {
@@ -83,13 +142,14 @@
     color: #fff;
     box-shadow: 0.1px 0.1px 2px black;
     border-radius: 5px;
-    transition: 0.2s;
+    transition: 0.5s;
 }
 
 .button-landingpage:hover{
     background-color: #fff;
     color: #ffaa00c4;
-    border: #ffaa00c4;
+    border: 1px solid #ffaa00c4;
+    box-shadow: none;
     cursor: pointer;
 }
 
@@ -129,4 +189,63 @@
 .sistema-container-img > img{
     width: 700px;
     height: 350px;
+}
+
+.sistema-funcionaparamim-container{
+    display: flex;
+    width: 100%;
+    height: 64vh;
+    margin-top: 35px;
+    margin-bottom: 35px;
+    padding: 15px;
+}
+
+.h1-funcionaparamim-container{
+    margin: 5px;
+    text-align: center;
+    width: 100%;
+}
+
+.pq-sistema-funcionaparamim-container{
+    display: inline-flex;
+    flex-direction: column;
+    width: 50%;
+    height: 60vh;
+    font-size: 1.4em;
+
+}
+
+.pq-sistema-funcionaparamim-container-img{
+    display: block;
+    background: url('../icones/satisfação\ -\ Copia.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 40vh;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.motivos-do-sistema-container{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding-left: 60px;
+    padding-top: 20px;
+}
+
+.motivos-do-sistema-container > p{
+    font-size: 1.4em;
+}
+
+.motivos-do-sistema-container > ul{
+    list-style-type: none;
+    margin: 15px;
+    margin-left: 35px;
+    font-size: 1.2em;
+}
+
+.motivos-do-sistema-container > ul > li{
+    font-size: 1em;
+    margin: 15px;
 }
