@@ -1,251 +1,386 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Times New Roman', Times, serif;
-}
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Times New Roman', Times, serif;
+    }
 
-.container{
-    display: grid;
-    grid-template-rows: auto 1fr auto; /* Três linhas, com altura automática para o nav e footer */
-    grid-template-areas:
-        "nav" 
-        "main" 
-        "footer"; 
-    height: 100vh; 
-}
+    .container{
+        display: grid;
+        grid-template-rows: auto 1fr auto; /* Três linhas, com altura automática para o nav e footer */
+        grid-template-areas:
+            "nav" 
+            "main" 
+            "footer"; 
+        height: 100vh;
+        width: 100vw;
+    }
 
-.link-navbar {
-    color: #000;
-    text-decoration: none;
-    position: relative;
-    display: inline-flex;
-}
-.link-navbar::before{
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 20px;
-    width: 100%;
-    height: 2.5px;
-    background-color: #ffaa00c4;
-    border-radius: 4px;
-    scale: 0 1;
-    transform-origin: right;
-    transition: scale 0.35s;
-}
-/*efeito ao passar o mouse nos links*/
-.link-navbar:hover::before{
-    scale: 1;
-    transform-origin: left;
-}
-/*configuração da logo na navbar*/
-.logo{
-    background-image: url('../icones/logo.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    height: 7vh;
-    width: 116px;
-}
-/*navbar container, definições de altura, posição, cor e etc*/
-nav{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-family: 'Courier New', Courier, monospace;
-    background: #fff;
-    height: 10vh;
-    box-shadow: 0px 0px 3px rgba(112, 112, 112, 0.603);
-    padding: 5px;
-}
-/*lista contida na navbar, sem efeitos de lista na tag <ul>*/
-.navbar-list{
-    list-style: none;
-    display: flex;
-}
-/*caracteristicas da lista na tag <li>*/
-.navbar-list li{
-    letter-spacing: 0.5px;
-    margin-left: 32px;
-    font-size: 16px;
-}
+    .link-navbar {
+        color: #000;
+        text-decoration: none;
+        position: relative;
+        display: inline-flex;
+    }
+    .link-navbar::before{
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 20px;
+        width: 100%;
+        height: 2.5px;
+        background-color: #ffaa00c4;
+        border-radius: 4px;
+        scale: 0 1;
+        transform-origin: right;
+        transition: scale 0.35s;
+    }
+    /*efeito ao passar o mouse nos links*/
+    .link-navbar:hover::before{
+        scale: 1;
+        transform-origin: left;
+    }
+    /*configuração da logo na navbar*/
+    .logo{
+        background-image: url('../icones/logo.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        height: 7vh;
+        width: 116px;
+    }
+    /*navbar container, definições de altura, posição, cor e etc*/
+    nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-family: 'Courier New', Courier, monospace;
+        background: #fff;
+        height: 10vh;
+        box-shadow: 0px 0px 3px rgba(112, 112, 112, 0.603);
+        padding: 5px;
+    }
+    /*lista contida na navbar, sem efeitos de lista na tag <ul>*/
+    .navbar-list{
+        list-style: none;
+        display: flex;
+    }
+    /*caracteristicas da lista na tag <li>*/
+    .navbar-list li{
+        letter-spacing: 0.5px;
+        margin-left: 32px;
+        font-size: 16px;
+    }
 
-.navbar-list li:last-child{
-    margin-right: 15px;
-}
+    .navbar-list li:last-child{
+        margin-right: 15px;
+    }
 
-.header {
-    grid-area: nav;
-    /* background-color: lightblue;  */
-}
+    .header {
+        grid-area: nav;
+        /* background-color: lightblue;  */
+    }
 
-.main {
-    grid-area: main; 
-    /* background-color: lightgreen;  */
-    padding: 16px; 
-}
+    .main {
+        width: 100%;
+        grid-area: main; 
+        /* background-color: lightgreen;  */
+        padding: 16px; 
+        display: grid;
+    }
 
-.footer {
-    grid-area: footer; 
-    /* background-color: lightcoral;  */
-    padding: 16px; 
-}
+    .footer {
+        grid-area: footer; 
+        /* background-color: lightcoral;  */
+        padding: 16px; 
+    }
 
-.intro-container{
-    padding: 20px;
-    width: 70%;
-    margin: auto;
-    text-align: center;
-}
+    .intro-container{
+        padding: 20px;
+        width: 70%;
+        margin: auto;
+        text-align: center;
+    }
 
-.intro-container > img{
-    margin: auto;
-    position: relative;
-    bottom: 20px;
-    width: 150px;
-}
+    .intro-container > img{
+        margin: auto;
+        position: relative;
+        bottom: 20px;
+        width: 150px;
+    }
 
-.intro-container > p{
-    font-size: 1.2em;
-}
+    .intro-container > p{
+        font-size: 1.2em;
+    }
 
-.video-container{
-    margin: auto;
-    width: 65%;
-    height: 70vh;
-}
+    .video-container{
+        margin: auto;
+        width: 65%;
+        height: 70vh;
+    }
 
-.video-container > iframe{
-    box-shadow: 0px 0px 1px black;
-    border: none;
-    border-radius: 10px;
-    width: 100%;
-    height: 100%;
-}
+    .video-container > iframe{
+        box-shadow: 0px 0px 1px black;
+        border: none;
+        border-radius: 10px;
+        width: 100%;
+        height: 100%;
+    }
 
-.btn{
-    display: flex;
-    justify-content: center;
-    margin-top: 35px;
-}
+    .btn{
+        display: flex;
+        justify-content: center;
+        margin-top: 35px;
+    }
 
-.button-landingpage{
-    margin: auto;
-    width: 30%;
-    height: 7vh;
-    font-size: 20px;
-    padding: 5px;
-    background-color: #ffaa00c4;
-    border: none;
-    color: #fff;
-    box-shadow: 0.1px 0.1px 2px black;
-    border-radius: 5px;
-    transition: 0.5s;
-}
+    .button-landingpage{
+        margin: auto;
+        width: 30%;
+        height: 7vh;
+        font-size: 20px;
+        padding: 5px;
+        background-color: #ffaa00c4;
+        border: none;
+        color: #fff;
+        box-shadow: 0.1px 0.1px 2px black;
+        border-radius: 5px;
+        transition: 0.5s;
+    }
 
-.button-landingpage:hover{
-    background-color: #fff;
-    color: #ffaa00c4;
-    border: 1px solid #ffaa00c4;
-    box-shadow: none;
-    cursor: pointer;
-}
+    .button-landingpage:hover{
+        background-color: #fff;
+        color: #ffaa00c4;
+        border: 1px solid #ffaa00c4;
+        box-shadow: none;
+        cursor: pointer;
+    }
 
-.sistema-container{
-    display: flex;
-    top: 35px;
-    width: 90%;
-    height: 50vh;
-    margin: auto;
-    margin-top: 35px;
-    margin-bottom: 35px;
-}
+    .sistema-container{
+        display: flex;
+        top: 35px;
+        width: 90%;
+        height: 50vh;
+        margin: auto;
+        margin-top: 35px;
+        margin-bottom: 35px;
+    }
 
-.sistema-container-txt{
-    display: inline-block;
-    width: 50%;
-    height: 50vh;
-    text-align: justify;
-    padding: 10px;
-}
+    .sistema-container-txt{
+        display: inline-block;
+        width: 50%;
+        height: 50vh;
+        text-align: justify;
+        padding: 10px;
+    }
 
-.sistema-container-txt > h1{
-    margin: 5px;
-    line-height: 50px;
-}
+    .sistema-container-txt > h1{
+        margin: 5px;
+        line-height: 50px;
+    }
 
-.sistema-container-txt > p{
-    font-size: 1.2em;
-    line-height: 25px;
-}
+    .sistema-container-txt > p{
+        font-size: 1.2em;
+        line-height: 25px;
+    }
 
-.sistema-container-img{
-    width: 50%;
-    height: 50vh;
-}
+    .sistema-container-img{
+        width: 50%;
+        height: 50vh;
+    }
 
-.sistema-container-img > img{
-    width: 700px;
-    height: 350px;
-}
+    .sistema-container-img > img{
+        width: 700px;
+        height: 350px;
+    }
 
-.sistema-funcionaparamim-container{
-    display: flex;
-    width: 100%;
-    height: 64vh;
-    margin-top: 35px;
-    margin-bottom: 35px;
-    padding: 15px;
-}
+    .sistema-funcionaparamim-container{
+        display: flex;
+        width: 100%;
+        height: 64vh;
+        margin-top: 35px;
+        margin-bottom: 35px;
+        padding: 15px;
+    }
 
-.h1-funcionaparamim-container{
-    margin: 5px;
-    text-align: center;
-    width: 100%;
-}
+    .h1-funcionaparamim-container{
+        margin: 5px;
+        text-align: center;
+        width: 100%;
+    }
 
-.pq-sistema-funcionaparamim-container{
-    display: inline-flex;
-    flex-direction: column;
-    width: 50%;
-    height: 60vh;
-    font-size: 1.4em;
+    .pq-sistema-funcionaparamim-container{
+        display: inline-flex;
+        flex-direction: column;
+        width: 50%;
+        height: 60vh;
+        font-size: 1.4em;
 
-}
+    }
 
-.pq-sistema-funcionaparamim-container-img{
-    display: block;
-    background: url('../icones/satisfação\ -\ Copia.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    height: 40vh;
-    margin-top: 10px;
-    border-radius: 5px;
-}
+    .pq-sistema-funcionaparamim-container-img{
+        display: block;
+        background: url('../icones/satisfação\ -\ Copia.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 40vh;
+        margin-top: 10px;
+        border-radius: 5px;
+    }
 
-.motivos-do-sistema-container{
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-    padding-left: 60px;
-    padding-top: 20px;
-}
+    .motivos-do-sistema-container{
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        padding-left: 60px;
+        padding-top: 20px;
+    }
 
-.motivos-do-sistema-container > p{
-    font-size: 1.4em;
-}
+    .motivos-do-sistema-container > p{
+        font-size: 1.4em;
+    }
 
-.motivos-do-sistema-container > ul{
-    list-style-type: none;
-    margin: 15px;
-    margin-left: 35px;
-    font-size: 1.2em;
-}
+    .motivos-do-sistema-container > ul{
+        list-style-type: none;
+        margin: 15px;
+        margin-left: 35px;
+        font-size: 1.2em;
+    }
 
-.motivos-do-sistema-container > ul > li{
-    font-size: 1em;
-    margin: 15px;
-}
+    .motivos-do-sistema-container > ul > li{
+        font-size: 1em;
+        margin: 15px;
+    }
+
+    .eventoDiv {
+        display: flex;
+        margin: auto;
+        width: 75%;
+        justify-content: center;
+        align-content: center;
+        margin-top: 20px;
+    }
+
+    .iframeDiv {
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        margin-right: 5px;
+    }
+
+    .iframeDiv > h3 {
+        text-align: center;
+        background-color: #211e2d;
+        border-radius: 15px 15px 0px 0px;
+        padding: 10px;
+        width: 100% ;
+        color: #D5B35D;
+    }
+
+    .video {
+        width: 100%;
+        height: 88%;
+    }
+
+    .video > iframe {
+        width: 100%; /* Define a largura do vídeo como 100% */
+        height: 100%; /* Define a altura do vídeo como 100% */
+        object-fit: cover;
+    }
+
+    .mentoriaDiv {
+        text-align: center;
+        background-color: #ffaa00c4;
+        border-radius: 10px;
+        width: 35%;
+        padding: 0px 10px 20px 0px;
+        margin-left: 5px;
+    }
+
+    .mentoriaDiv h2{
+        width: 85%;
+        margin: auto;
+        padding: 20px 0px 20px 0px;
+        text-align: justify;
+    }
+
+    .mentoriaDiv p{
+        width: 85%;
+        margin: auto;
+        padding: 10px 0px 20px 0px;
+        text-align: justify;
+        font-size: 1.1em;
+    }
+
+    .parcelasDiv {
+        margin: auto;
+        text-align: center;
+        width: 100%;
+        margin-top: 80px;
+    }
+
+    .parcelasDiv > h2 {
+        margin: 10px;
+    }
+
+    .parcelasDiv > h1 {
+        color: #C5A56C;
+        margin-top: 5px;
+        font-size: 3em;
+    }
+
+    .parcelasDiv > h1 > span {
+        font-size: 0.6em;
+        color: black;
+    }
+
+    .parcelasDiv > p{
+        font-size: 1.5em;
+        margin: 20px;
+    }
+
+    .parcelasDiv > button {
+        margin-bottom: 60px;
+    }
+
+    .caixaDiv {
+        text-align: justify;
+        margin: auto;
+        width: 50%;
+        color: white;
+        background-color: #313131;
+        border-radius: 20px;
+        padding: 40px;
+        border: 2px dashed gray;
+    }
+
+    .caixaDiv > h2 {
+        margin-bottom: 20px;
+    }
+
+    .caixaDiv > p {
+        font-size: 1.2em;
+        margin-bottom: 20px;
+    }
+
+    .assinaturaDiv {
+        text-align: center;
+        margin-top: 50px;
+        
+    }
+
+    .assinaturaDiv > h1 {
+        font-size: 2.5em;
+        color: #BC9D65;
+        word-wrap: break-word; text-align: center;
+        width: 25%; 
+        margin: auto;
+    }
+
+    .assinaturaDiv > p {
+        font-size: 1.3em;
+        margin: auto;
+        width: 40%;
+        margin-top: 20px;
+    }
