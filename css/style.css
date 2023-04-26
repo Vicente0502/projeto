@@ -93,10 +93,36 @@ nav{
     padding: 16px; 
 }
 
+
+/* Botão do whatsapp acompanhando body  */
+
+.button-whatsapp-container{
+    width: 50px;
+    height: 50px;
+    margin-top: 40%;
+    margin-left: 92%;
+    border-radius: 50%;
+    box-shadow: 0px 0px 6px #e39d2ded;
+    background-image: url('../icones/WHATSAPP.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: 0.4s;
+    position: fixed;
+    z-index: 5;
+} 
+
+.button-whatsapp-container:hover{
+    box-shadow: 0px 0px 10px #e39d2ded;
+    cursor: pointer;
+    width: 60px;
+    height: 60px;
+}
+
+/*  INICIO DO CONTEÚDO DO SITE*/
 .intro-container{
     padding: 20px;
     width: 70%;
-    margin: auto;
+    margin: 35px auto;
     text-align: center;
 }
 
@@ -108,13 +134,14 @@ nav{
 }
 
 .intro-container > p{
-    font-size: 1.2em;
+    font-size: 1.1em;
 }
 
+/* CONFIGURAÇÃO DO VÍDEO */
 .video-container{
-    margin: auto;
-    width: 65%;
-    height: 70vh;
+    margin: 35px auto;
+    width: 60%;
+    height: 75vh;
 }
 
 .video-container > iframe{
@@ -125,22 +152,22 @@ nav{
     height: 100%;
 }
 
+/* CONFIGURAÇÃO DO BOTÃO */
 .btn{
     display: flex;
     justify-content: center;
-    margin-top: 35px;
+    margin-top: 40px;
 }
 
 .button-landingpage{
     margin: auto;
-    width: 30%;
+    width: 115%;
     height: 7vh;
     font-size: 20px;
     padding: 5px;
     background-color: #ffaa00c4;
     border: none;
     color: #fff;
-    box-shadow: 0.1px 0.1px 2px black;
     border-radius: 5px;
     transition: 0.5s;
 }
@@ -153,10 +180,11 @@ nav{
     cursor: pointer;
 }
 
+/* CONTAINER O QUE É O SISTEMA APOLO */
 .sistema-container{
     display: flex;
     top: 35px;
-    width: 90%;
+    width: 85%;
     height: 50vh;
     margin: auto;
     margin-top: 35px;
@@ -191,12 +219,12 @@ nav{
     height: 350px;
 }
 
+/* DIV O SISTEMA FUNCIONA PARA MIM E PARA QUEM É INDICADO */
 .sistema-funcionaparamim-container{
     display: flex;
-    width: 100%;
+    width: 85%;
     height: 64vh;
-    margin-top: 35px;
-    margin-bottom: 35px;
+    margin: 35px auto;
     padding: 15px;
 }
 
@@ -211,7 +239,7 @@ nav{
     flex-direction: column;
     width: 50%;
     height: 60vh;
-    font-size: 1.4em;
+    font-size: 1.2em;
 
 }
 
@@ -231,7 +259,6 @@ nav{
     flex-direction: column;
     width: 50%;
     padding-left: 60px;
-    padding-top: 20px;
 }
 
 .motivos-do-sistema-container > p{
@@ -241,11 +268,290 @@ nav{
 .motivos-do-sistema-container > ul{
     list-style-type: none;
     margin: 15px;
-    margin-left: 35px;
     font-size: 1.2em;
 }
 
 .motivos-do-sistema-container > ul > li{
     font-size: 1em;
     margin: 15px;
+}
+
+/* CONTAINERS COM ARGUMENTOS PARA USO */
+.cards-convencimento-container{
+    margin: auto 100px;
+    height: auto;
+    width: 85%;
+    padding: 15px;
+    display: inline-flex;
+    flex-wrap: wrap;
+    /* margin-bottom: 35px; */
+}
+
+.cards-container{
+    width: 49%;
+    position: relative;
+    margin: 5px;
+    height: 25vh;
+}
+
+.cards-container > img{
+    display: inline-flex;
+    width: 80px;
+    height: 80px;
+}
+
+.cards-container > h3{
+    position: relative;
+    top: -45px;
+    left: 15px;
+    display: inline-flex;
+}
+
+
+.cards-container > p {
+    font-size: 1.1em;
+    position: relative;
+    text-align: justify;
+    left: 98px;
+    width: 75%;
+    bottom: 35px;
+}
+/* LISTA DE MOTIVOS PARA VOCÊ QUE DESEJA */
+.pra-voce-que-deseja-container{
+    margin: 35px auto;
+    padding: 15px;
+    width: 85%;
+    border-bottom: 1px solid #0000001f;
+    border-top: 1px solid #0000001f;
+}
+
+.pra-voce-que-deseja-h1-container{
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.pra-voce-que-deseja-list-container{
+    margin: 30px;
+    text-align: center;
+}
+
+.pra-voce-que-deseja-item-container{
+    text-align: center;
+    width: 650px;
+    margin: auto;
+}
+
+.pra-voce-que-deseja-list-container > ul,li{
+    margin: 5px;
+    text-align: justify;
+    font-size: 1.1em;
+}
+
+.pra-voce-que-deseja-list-container > ul{
+    list-style-image: url('../icones/1.png');
+}
+
+.pra-voce-que-deseja-item-container > li > p{
+    bottom: 15px;
+    position: relative;
+}
+
+/* VANTAGENS DE SER CLIENTE CARDS */
+
+.vantagens-cliente-container{
+    width: 90%;
+    height: auto;
+    margin: auto;
+    padding: 15px;
+    /* display: inline-flex; */
+    margin-bottom: 35px;
+}
+
+.h1-vantagens-cliente-container{
+    width: auto;
+    margin: auto;
+    margin-bottom: 35px;
+    bottom: 10px;
+    display: table;
+}
+
+.cards-container-servicos{
+    display: inline-flex;
+    width: 45%;
+    border-radius: 5px;
+    box-shadow: 0px 0px 2px 0px #d86722;
+    height: 25vh;
+    margin: 20px;
+    padding: 15px;
+    transition: 0.5s;
+    opacity: 1;
+}
+
+.cards-container-servicos:hover{
+    width: 46%;
+    height: 26vh;
+}
+
+.cards-container-servicos:not(.cards-container-servicos:hover){
+    opacity: 0.8;
+}
+
+.cards-container-servicos > img{
+    position: relative;
+    display: inline-flex;
+    top: 30px;
+    width: 80px;
+    height: 80px;
+}
+
+.cards-container-servicos > h3{
+    position: relative;
+    left: 30px;
+    height: 5vh;
+    width: auto;
+    display: inline-flex;
+}
+
+.cards-container-servicos > p{
+    position: relative;
+    text-align: justify;
+    top: 25px;
+    left: -10px;
+    display: inline-flex;
+}
+
+
+/* WILLIAN */
+
+.eventoDiv {
+    display: flex;
+    margin: auto;
+    width: 85%;
+    height: 65vh;
+    margin-top: 20px;
+}
+
+.iframeDiv {
+    width: 60%;
+    margin-right: 5px;
+}
+
+.iframeDiv > h3 {
+    text-align: center;
+    background-color: #211e2d;
+    border-radius: 15px 15px 0px 0px;
+    padding: 10px;
+    width: 100%;
+    color: #D5B35D;
+}
+
+.video {
+    width: 100%;
+    height: 92%;
+}
+
+.video > iframe {
+    width: 100%; /* Define a largura do vídeo como 100% */
+    height: 100%; /* Define a altura do vídeo como 100% */
+    object-fit: cover;
+    border-radius: 0px 0px 15px 15px;
+}
+
+.mentoriaDiv {
+    text-align: center;
+    background-color: #ffaa00c4;
+    border-radius: 10px;
+    width: 36%;
+    padding: 0px 10px 20px 0px;
+    margin-left: 5px;
+}
+
+.mentoriaDiv h2{
+    width: 85%;
+    margin: auto;
+    padding: 20px 0px 20px 0px;
+    text-align: justify;
+}
+
+.mentoriaDiv p{
+    width: 85%;
+    margin: auto;
+    padding: 10px 0px 20px 0px;
+    text-align: justify;
+    font-size: 1.1em;
+}
+
+.parcelasDiv {
+    margin: 70px auto;
+    text-align: center;
+    width: 100%;
+}
+
+.parcelasDiv > h2 {
+    margin: 10px;
+}
+
+.parcelasDiv > h1 {
+    color: #C5A56C;
+    margin-top: 5px;
+    font-size: 3em;
+}
+
+.parcelasDiv > h1 > span {
+    font-size: 0.6em;
+    color: black;
+}
+
+.parcelasDiv > p{
+    font-size: 1.5em;
+    margin: 20px;
+}
+
+.parcelasDiv > button {
+    margin-bottom: 60px;
+}
+
+.caixaDiv {
+    text-align: justify;
+    margin: 35px auto;
+    width: 85%;
+    color: white;
+    background-color: #313131;
+    border-radius: 20px;
+    padding: 40px;
+    border: 2px dashed gray;
+}
+
+.caixaDiv > h2 {
+    margin-bottom: 20px;
+}
+
+.caixaDiv > p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.assinaturaDiv {
+    text-align: center;
+    margin: 50px auto;
+    padding: 15px;
+    border-top: 1px solid #00000036;
+    border-bottom: 1px solid #00000036;
+    width: 85%;
+}
+
+.assinaturaDiv > h1 {
+    font-size: 2.5em;
+    color: #BC9D65;
+    word-wrap: break-word;
+    text-align: center;
+    width: 75%; 
+    margin: 40px auto;
+}
+
+.assinaturaDiv > p {
+    font-size: 1.3em;
+    margin: 40px auto;
+    width: 75%;
+    margin-top: 20px;
 }
