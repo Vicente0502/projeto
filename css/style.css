@@ -407,7 +407,7 @@ nav{
 .cards-container-servicos > h3{
     position: relative;
     left: 30px;
-    height: 5vh;
+    height: 7vh;
     width: auto;
     display: inline-flex;
 }
@@ -555,3 +555,42 @@ nav{
     width: 75%;
     margin-top: 20px;
 }
+
+.depoimento-section {
+    background-color: #f7f7f7;
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  .depoimento-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 40px;
+  }
+  
+  .depoimento {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 20px;
+    width: 300px;
+  }
+  
+  .depoimento img {
+    border-radius: 50%;
+    margin-bottom: 20px;
+  }
+  
+  .depoimento p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+  
+  .client-name {
+    font-style: italic;
+  }
+  
