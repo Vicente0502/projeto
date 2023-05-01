@@ -99,7 +99,7 @@ nav{
 .button-whatsapp-container{
     width: 50px;
     height: 50px;
-    margin-top: 40%;
+    margin-top: 41%;
     margin-left: 92%;
     border-radius: 50%;
     box-shadow: 0px 0px 6px #e39d2ded;
@@ -124,6 +124,20 @@ nav{
     width: 70%;
     margin: 35px auto;
     text-align: center;
+    animation: up 2s 1;
+}
+
+/* Animação do carregamento da página da classe .introcontainer  */
+
+@keyframes up {
+    from{
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
 
 .intro-container > img{
@@ -284,7 +298,6 @@ nav{
     padding: 15px;
     display: inline-flex;
     flex-wrap: wrap;
-    /* margin-bottom: 35px; */
 }
 
 .cards-container{
@@ -556,10 +569,39 @@ nav{
     margin-top: 20px;
 }
 
+/* CSS Perguntas frequentes */
+
+.perguntas-frequentes{
+    width: 70%;
+    margin: 35px auto;
+    padding: 25px;
+}
+
+.perguntas-frequentes > h1{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.perguntas-frequentes-details{
+    padding: 25px;
+    border: 1px solid;
+    border-radius: 10px;
+    margin: 15px;
+}
+
+.perguntas-frequentes-details > p{
+    margin: 20px;
+}
+
+/* CSS dos Depoimentos  */
+
 .depoimento-section {
     background-color: #f7f7f7;
     padding: 40px 20px;
     text-align: center;
+    border-radius: 15px;
+    width: 90%;
+    margin: auto;
   }
   
   .depoimento-container {
@@ -578,19 +620,188 @@ nav{
     padding: 20px;
     width: 300px;
   }
-  
-  .depoimento img {
+
+  .depoimento > img {
     border-radius: 50%;
     margin-bottom: 20px;
+    border: 2px solid #7898e89b;
   }
-  
+
   .depoimento p {
     font-size: 16px;
     line-height: 1.5;
     margin-bottom: 20px;
-  }
+  } 
   
   .client-name {
     font-style: italic;
   }
   
+  /* CSS footer da página */
+
+  .footer{
+    display: flex;
+    background-color: #da842e;
+    height: 45vh;
+    margin-top: 35px;
+    padding: 50px;
+    color: white;
+    font-size: 1.1em;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  /* CSS logo */
+
+  .logo-footer{
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* CSS Links de retorno */
+
+  .pagina{
+    border-right: 1px solid;
+    width: 15%;
+    padding: 15px;
+    height: 30vh;
+  }
+
+  .list-link{
+    margin-top: 15px;
+    left: 5px;
+  }
+
+  .pagina-link{
+    list-style: none;
+    margin-top: 15px;
+  }
+
+  .pagina-link > a{
+    color: white;
+    position: relative;
+    text-decoration: none;
+  }
+
+  .pagina-link>a:hover{
+    top: -2px;
+  }
+
+  /* CSS das redes sociais */
+  .redes-sociais{
+    height: 30vh;
+    width: 20%;
+    padding: 15px;
+    display: inline-flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .redes-sociais > h2{
+    margin-bottom: 35px;
+  }
+
+  .redes-sociais > ul{
+    display: inline-flex;
+    list-style: none;
+  }
+
+  .redes{
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+    position: relative;
+  }
+
+  .link > img{
+    width: 40px;
+    height: 40px;
+  }
+
+  .redes:hover{
+    top:-2px;
+  }
+
+  /* CSS botão footer */
+  .btn-footer{
+    margin-top: 25px;
+    width: 70%;
+    height: 5vh;
+    border-radius: 25px;
+  }
+
+  .button-footer{
+    width: 95%;
+    height: 6vh;
+    border-radius: 25px;
+    border: none;
+    font-size: 1em;
+    color: white;
+    background-color: #f9d5766b;
+    transition: .2s;
+  }
+
+  .button-footer:hover{  
+    width: 98%;
+    cursor: pointer;
+  }
+
+  .redes > a:hover{
+    width: 115px;
+    height: 50px;
+  }
+
+
+  /* CSS localização */
+  .localizacao{
+    width: 22%;
+    height: 30vh;
+    padding: 15px;
+    border-right: 1px solid;
+  }
+
+  .localizacao-h2{
+    margin-bottom: 25px;
+    display: inline-flex;
+  }
+
+  .localizacao-h2 > img{
+    width: 30px;
+    height: 30px;
+    margin-left: 15px;
+  }
+
+  .localizacao > a{
+    color: white;
+    text-decoration: none;
+    position: relative;
+    transition-delay: 0.9s;
+  }
+
+  .localizacao > a:hover{
+    top: -5px;
+    box-shadow: 0px 0px 2px 0px yellow;
+  }
+
+  .localizacao > a > p{
+    margin: 5px;
+    font-size: 1.2em;
+  }
+
+  /* CSS footer bar */
+  .footer-bar{
+    width: 100%;
+    height: 5vh;
+    border-top: 1px solid #f9d5766b;
+    background-color: #da842e;
+    color: #f9d676;
+    padding: 10px;
+    text-align: center;
+  }
