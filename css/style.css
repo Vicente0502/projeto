@@ -587,6 +587,7 @@ nav{
     border: 1px solid;
     border-radius: 10px;
     margin: 15px;
+    cursor: pointer;
 }
 
 .perguntas-frequentes-details > p{
@@ -617,7 +618,7 @@ nav{
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin: 10px;
-    padding: 20px;
+    padding: 5px;
     width: 300px;
   }
 
@@ -632,6 +633,11 @@ nav{
     line-height: 1.5;
     margin-bottom: 20px;
   } 
+
+  .depoimento > video {
+    width: 100%;
+    border-radius: 5%;
+  }
   
   .client-name {
     font-style: italic;
