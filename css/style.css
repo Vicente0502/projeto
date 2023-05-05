@@ -594,7 +594,7 @@ nav{
     margin: 20px;
 }
 
-/* CSS dos Depoimentos  */
+/* CSS dos Depoimentos com vídeo  */
 
 .depoimento-section {
     background-color: #f7f7f7;
@@ -619,7 +619,7 @@ nav{
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin: 10px;
     padding: 5px;
-    width: 300px;
+    width: 275px;
   }
 
   .depoimento > img {
@@ -642,6 +642,30 @@ nav{
   .client-name {
     font-style: italic;
   }
+
+  /* CSS depoimento com texto */
+
+  .depoimento-text {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 5px;
+    width: 270px;
+  }
+
+  .depoimento-text > img {
+    border-radius: 50%;
+    margin-bottom: 20px;
+    border: 2px solid #7898e89b;
+  }
+
+  .depoimento-text p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  } 
   
   /* CSS footer da página */
 
@@ -666,6 +690,11 @@ nav{
     margin: auto;
     align-items: center;
     justify-content: center;
+    width: 18%;
+    height: 30vh;
+    background-image: url('../icones/logo\ branca.png');
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 
   /* CSS Links de retorno */
