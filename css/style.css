@@ -270,25 +270,33 @@ nav{
 
 .motivos-do-sistema-container{
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
+    align-content: space-around;
     width: 50%;
-    padding-left: 60px;
+    padding: 20px;
 }
 
 .motivos-do-sistema-container > p{
     font-size: 1.4em;
+    display: none;
 }
 
-.motivos-do-sistema-container > ul{
-    list-style-type: none;
-    margin: 15px;
-    font-size: 1.2em;
+/* Cards com motivos do sistema */
+.cards-motivos-do-sistema{
+    width: 45%;
+    padding: 10px;
+    height: 17vh;
 }
 
-.motivos-do-sistema-container > ul > li{
-    font-size: 1em;
-    margin: 15px;
+.cards-motivos-do-sistema > p{
+    position: relative;
+    text-align: justify;
+    left: 25px;
+    top: -25px;
+    width: 80%;
 }
+
 
 /* CONTAINERS COM ARGUMENTOS PARA USO */
 .cards-convencimento-container{
