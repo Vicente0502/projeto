@@ -78,9 +78,6 @@ nav{
     margin-right: 15px;
 }
 
-/* Responsive navbar */
-
-
 .header {
     grid-area: nav;
     /* background-color: lightblue;  */
@@ -116,7 +113,7 @@ nav{
     z-index: 5;
     animation: pular 1s infinite;
     animation-direction: alternate;
-    animation-timing-function: ease-in-out;
+    animation-timing-function: ease-out;
 } 
 
 .button-whatsapp-container:hover{
@@ -262,6 +259,7 @@ nav{
     height: 46vh;
 }
 
+
 /* DIV O SISTEMA FUNCIONA PARA MIM E PARA QUEM É INDICADO */
 .sistema-funcionaparamim-container{
     display: flex;
@@ -310,6 +308,7 @@ nav{
     font-size: 1.4em;
     display: none;
 }
+
 
 /* Cards com motivos do sistema */
 .cards-motivos-do-sistema{
@@ -932,4 +931,122 @@ nav{
     transform: translateY(0);
   }
 
-  
+
+  /* RESPONSIVIDADE PARA TELAS PEQUENAS E LAPTOPS */
+
+  @media (min-width: 768px) and (max-width: 1024px){
+    .intro-container {
+        padding: 20px;
+        margin: 10px auto;
+        text-align: center;
+        animation: up 2s 1;
+        display: inline-flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .intro-container > .chamada-container {
+        width: 45%;
+        height: 83vh;
+        margin: 5px;
+        text-align: justify;
+    }
+
+    .sistema-container {
+        display: flex;
+        top: 35px;
+        width: 85%;
+        height: 65vh;
+        margin: auto;
+        margin-top: 35px;
+        margin-bottom: 35px;
+    }
+
+    .h1-funcionaparamim-container {
+        margin-top: 120px;
+        text-align: center;
+        width: 100%;
+    }
+
+    .sistema-funcionaparamim-container {
+        display: flex;
+        width: 95%;
+        height: 64vh;
+        margin: 35px auto;
+        padding: 5px;
+    }
+
+   .sistema-funcionaparamim-container > .motivos-do-sistema-container {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-content: space-around;
+        width: 59%;
+        padding: 10px;
+        justify-content: space-between;
+    }
+
+    .cards-convencimento-container > .cards-container{
+        width: auto;
+    }
+
+    .vantagens-cliente-container {
+        width: 90%;
+        height: auto;
+        margin: 85px auto;
+        padding: 15px;
+    }
+
+    .vantagens-cliente-container > .cards-container-servicos {
+        display: inline-flex;
+        border-radius: 5px;
+        box-shadow: 0px 0px 2px 0px #d86722;
+        height: 24vh;
+        width: auto;
+        margin: 20px;
+        padding: 15px;
+        transition: 0.5s;
+        opacity: 1;
+    }
+
+    .vantagens-cliente-container > .cards-container-servicos:hover {
+        height: 28vh;
+    }
+
+    .eventoDiv {
+        display: flex;
+        margin: auto;
+        width: 85%;
+        height: 93vh;
+    }
+
+    .footer > .logo-footer {
+        display: none;
+    }
+
+    .footer > .pagina {
+        border-right: 1px solid;
+        width: 20%;
+        /* padding: 15px; */
+        height: 30vh;
+    }
+
+    .footer > .localizacao {
+        width: 33%;
+        height: 30vh;
+        padding: 15px;
+        border-right: 1px solid;
+    }
+
+    .footer > .redes-sociais {
+        height: 30vh;
+        width: 29%;
+        display: inline-flex;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+  }
