@@ -1050,3 +1050,255 @@ nav{
     }
 
   }
+
+  /* RESPONSIVIDADE PARA TELAS MAIORES QUE 1024PX*/
+
+  @media (min-width: 1024px){
+    
+    
+    .link-navbar::before{
+        top: 30px;
+    }
+
+    .link-navbar{
+        font-size: 1.4em;
+    }
+
+    .button-landingpage {
+        width: 125%;
+        height: 8vh;
+        font-size: 1.5em;
+    }
+
+    .button-whatsapp-container{
+        width: 70px;
+        height: 70px;
+        margin-top: 35%;
+    }
+
+    .button-whatsapp-container:hover{
+        width: 80px;
+        height: 80px;
+    }
+
+    .chamada-container > p{
+        font-size: 1.5em;
+        line-height: 1.5;
+    }
+
+    .sistema-container-txt > p{
+        font-size: 1.5em;
+        line-height: 1.5;
+    }
+
+    .sistema-funcionaparamim-container {
+        height: 67vh;
+    }
+
+    .h1-funcionaparamim-container {
+        margin-top: 120px;
+        text-align: center;
+        width: 100%;
+    }
+
+    .pq-sistema-funcionaparamim-container{
+        font-size: 1.5em;
+        line-height: 1.5;
+    }
+
+    .cards-convencimento-container{
+        text-align: center;
+    }
+
+   .cards-motivos-do-sistema > p{
+        font-size: 1.4em;
+        line-height: 1.3;
+    }
+
+    .cards-container > p{
+        line-height: 1.5;
+        font-size: 1.4em;
+        left: 150px;
+    }
+
+    .cards-container > h3{
+        font-size: 1.5em;
+        left: 10px;
+    }
+
+    .pra-voce-que-deseja-item-container{
+        width: 1000px;
+    }
+
+    .pra-voce-que-deseja-h1-container {
+        font-size: 1.2em;
+    }
+    
+    .pra-voce-que-deseja-item-container > li > p{
+        bottom: 10px;
+        line-height: 2;
+        font-size: 1.4em;
+    }
+
+    .cards-container-servicos > h3{
+        font-size: 1.4em;
+    }
+
+    .cards-container-servicos > p{
+        top: 55px;
+        line-height: 1.5;
+        font-size: 1.3em;
+    }
+
+    .eventoDiv{
+        height: 97vh;
+    }
+
+    .mentoriaDiv{
+        font-size: 1.4em;
+        line-height: 1.35;
+    }
+
+    .parcelasDiv{
+        font-size: 1.4em;
+        line-height: 1.5;
+    }
+
+    .caixaDiv{
+        font-size: 1.4em;
+        line-height: 1.5;
+    }
+
+    .assinaturaDiv{
+        font-size: 1.4em;
+        line-height: 1.5;
+    }
+    
+    .perguntas-frequentes{
+        font-size: 1.4em;
+        line-height: 1.5;
+    }
+
+    .quemsomos-container{
+        font-size: 1.4em;
+        line-height: 1.5;
+    }
+    
+    .depoimento-container{
+        font-size: 1.4em;
+        line-height: 1.5;
+    }
+
+    .depoimento p {
+        font-size: 20px;
+    }
+
+    .depoimento{
+        width: 310px;
+    }
+
+    .depoimento-text{
+        width: 310px;
+    }
+
+    .depoimento-text p {
+        font-size: 20px;;
+    }
+
+    .footer{
+        font-size: 1.4em;
+        line-height: 1.5;
+    }
+
+  }
+
+
+@media (min-width: 1650px){
+
+  .eventoDiv{
+    height: 75vh;
+  }
+}
+
+@media (max-width: 1680px){
+
+    .intro-container > .chamada-container {
+        height: 90vh;
+    }
+
+    .button-whatsapp-container {
+        margin-top: 46%;
+    }
+
+    .h1-funcionaparamim-container {
+        margin-top: 195px;
+    }
+
+    .cards-motivos-do-sistema{
+        margin: 9px;
+    }
+    .cards-motivos-do-sistema > p {
+        font-size: 1.3em;
+        line-height: 1;
+    }
+
+    .cards-motivos-do-sistema > p {
+        width: 87%;
+    }
+
+    .cards-convencimento-container {
+        text-align: inherit;
+    }
+
+    .cards-container {
+        width: auto;
+    }
+
+    .cards-container > p {
+        font-size: 1.5em;
+        left: 120px;
+        width: 90%;
+    }
+
+    .cards-container > h3 {
+        top: -60px;
+        left: 35px;
+    }
+
+    .pra-voce-que-deseja-container {
+        margin: auto;
+    }
+
+    .cards-container-servicos{
+        width: 46%;
+    }
+
+    .cards-container-servicos > p {
+        top: 35px;
+        line-height: 1.4;
+        font-size: 1.2em;
+    }
+
+    .eventoDiv {
+        width: 95%;
+        height: 90vh;
+    }
+
+    .pagina-link {
+        margin-top: 5px;
+    }
+
+    .localizacao > a > p {
+        margin: auto;
+        font-size: 1.1em;
+    }
+
+    .logo-footer {
+        width: 22%;
+    }
+
+    .footer-bar{
+        margin-top: 35px;
+    }
+  }
+  
