@@ -17,12 +17,14 @@
     height: 100vh; 
 }
 
+/* Links da navbar */
 .link-navbar {
     color: #000;
     text-decoration: none;
     position: relative;
     display: inline-flex;
 }
+
 .link-navbar::before{
     content: '';
     position: absolute;
@@ -36,11 +38,69 @@
     transform-origin: right;
     transition: scale 0.35s;
 }
+
 /*efeito ao passar o mouse nos links*/
 .link-navbar:hover::before{
     scale: 1;
     transform-origin: left;
 }
+
+/* Efeito ao passar o mouse sobre as palavras */
+
+/* Gestão */
+
+.span-gestao{
+    position: relative;
+    display: inline-flex;
+}
+
+.span-gestao::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 20px;
+    width: 100%;
+    height: 2.5px;
+    background-color: #ff8100;
+    border-radius: 4px;
+    scale: 1 4;
+    z-index: -1;
+    transform-origin: top;
+    transition: scale 1s;
+}
+
+.span-gestao:hover::before{
+    scale: 1 10;
+    transform-origin: bottom;
+}
+
+/* Todas as palavras */
+
+.span {
+    position: relative;
+    display: inline-flex;
+}
+
+.span::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 30px;
+    width: 100%;
+    height: 2.5px;
+    background-color: #ff8100;
+    border-radius: 4px;
+    scale: 1 4;
+    z-index: -1;
+    transform-origin: top;
+    transition: scale 1s;
+}
+
+.span:hover::before{
+    scale: 1 10;
+    transform-origin: bottom;
+}
+
 /*configuração da logo na navbar*/
 .logo{
     background-image: url('../icones/logo.png');
@@ -916,9 +976,10 @@ nav{
     height: 5vh;
     border-top: 1px solid #f9d5766b;
     background-color: #da842e;
-    color: #f9d676;
+    color: white;
     padding: 10px;
     text-align: center;
+    margin-top: 50px;
   }
 
   /* Configurações para animação das divs */
@@ -934,7 +995,12 @@ nav{
 
   /* RESPONSIVIDADE PARA TELAS PEQUENAS E LAPTOPS */
 
-  @media (min-width: 768px) and (max-width: 1024px){
+  @media (min-width: 768px){
+    .button-whatsapp-container{
+        margin-top: 550px;
+        margin-left: 90%;
+    }
+
     .intro-container {
         padding: 20px;
         margin: 10px auto;
@@ -944,13 +1010,24 @@ nav{
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
+        flex-direction: column-reverse;
+    }
+
+    .chamada-container > h1 {
+        margin-top: 30px;
     }
 
     .intro-container > .chamada-container {
-        width: 45%;
-        height: 83vh;
+        width: 80%;
+        height: auto;
         margin: 5px;
         text-align: justify;
+    }
+
+    .video-container {
+        margin: 35px auto;
+        width: 80%;
+        height: 75vh;
     }
 
     .sistema-container {
@@ -983,8 +1060,16 @@ nav{
         flex-direction: column;
         align-content: space-around;
         width: 59%;
-        padding: 10px;
+        padding: 0px;
         justify-content: space-between;
+    }
+
+    .cards-motivos-do-sistema{
+        margin: 7px;
+    }
+
+    .cards-convencimento-container{
+        width: auto;
     }
 
     .cards-convencimento-container > .cards-container{
@@ -1002,7 +1087,7 @@ nav{
         display: inline-flex;
         border-radius: 5px;
         box-shadow: 0px 0px 2px 0px #d86722;
-        height: 24vh;
+        height: 28vh;
         width: auto;
         margin: 20px;
         padding: 15px;
@@ -1011,14 +1096,40 @@ nav{
     }
 
     .vantagens-cliente-container > .cards-container-servicos:hover {
-        height: 28vh;
+        height: 29vh;
     }
 
     .eventoDiv {
         display: flex;
         margin: auto;
-        width: 85%;
-        height: 93vh;
+        width: auto;
+        height: auto;
+    }
+
+    .mentoriaDiv{
+        width: 50%;
+    }
+
+    .iframeDiv{
+        width: 50%;
+    }
+
+    .quemsomos-container{
+        width: auto;
+    }
+
+    .quemsomos_img{
+        width: 40%;
+        height: 40vh;
+    }
+
+    .quemsomos_p{
+        width: 45%;
+        line-height: 1.5;
+    }
+
+    .footer{
+        font-size: 1em;
     }
 
     .footer > .logo-footer {
@@ -1029,12 +1140,12 @@ nav{
         border-right: 1px solid;
         width: 20%;
         /* padding: 15px; */
-        height: 30vh;
+        height: 35vh;
     }
 
     .footer > .localizacao {
         width: 33%;
-        height: 30vh;
+        height: 35vh;
         padding: 15px;
         border-right: 1px solid;
     }
@@ -1053,139 +1164,281 @@ nav{
 
   /* RESPONSIVIDADE PARA TELAS MAIORES QUE 1024PX*/
 
-  @media (min-width: 1024px){
-    
-    
+@media (min-width: 1024px){
+
     .link-navbar::before{
         top: 30px;
     }
 
     .link-navbar{
-        font-size: 1.4em;
+        font-size: 1.2em;
     }
 
     .button-landingpage {
-        width: 125%;
+        width: 103%;
         height: 8vh;
         font-size: 1.5em;
+        padding: 10px;
     }
 
     .button-whatsapp-container{
-        width: 70px;
-        height: 70px;
-        margin-top: 35%;
+        width: 50px;
+        height: 50px;
+        margin-top: 550px;
+        margin-left: 89%;
     }
 
     .button-whatsapp-container:hover{
-        width: 80px;
-        height: 80px;
+        width: 65px;
+        height: 65px;
+    }
+
+    .intro-container {
+        padding: 20px;
+        margin: 10px auto;
+        text-align: center;
+        animation: up 2s 1;
+        display: inline-flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+    }
+
+    .intro-container > .chamada-container {
+        height: 80vh;
+        width: 46%;
+    }
+
+    .video-container {
+        margin: 35px auto;
+        width: 48%;
+        height: 75vh;
+    }
+
+    .chamada-container > h1 {
+        margin-top: 30px;
     }
 
     .chamada-container > p{
-        font-size: 1.5em;
+        font-size: 1.2em;
         line-height: 1.5;
     }
 
+    .sistema-container {
+        display: flex;
+        top: 35px;
+        width: 90%;
+        height: 65vh;
+        margin: auto;
+        margin-top: 35px;
+        margin-bottom: 35px;
+    }
+
     .sistema-container-txt > p{
-        font-size: 1.5em;
+        font-size: 1.2em;
         line-height: 1.5;
     }
 
     .sistema-funcionaparamim-container {
-        height: 67vh;
+        display: flex;
+        width: auto;
+        height: 65vh;
+        margin: 35px auto;
+        padding: 5px;
+        flex-direction: row;
     }
 
-    .h1-funcionaparamim-container {
-        margin-top: 120px;
-        text-align: center;
-        width: 100%;
+    .pq-sistema-funcionaparamim-container {
+        display: inline-flex;
+        width: 50%;
+        height: 60vh;
+        font-size: 1.2em;
+        flex-direction: column;
     }
 
-    .pq-sistema-funcionaparamim-container{
-        font-size: 1.5em;
-        line-height: 1.5;
+    .sistema-funcionaparamim-container > .motivos-do-sistema-container {
+        display: inline-flex;
+        width: 60%;
+        flex-wrap: wrap;
+        align-content: flex-start;
+        flex-direction: row;
     }
 
-    .cards-convencimento-container{
-        text-align: center;
+    .cards-motivos-do-sistema {
+        width: 46%;
     }
 
-   .cards-motivos-do-sistema > p{
-        font-size: 1.4em;
+    .cards-motivos-do-sistema > p {
+        font-size: 1em;
         line-height: 1.3;
     }
 
-    .cards-container > p{
-        line-height: 1.5;
-        font-size: 1.4em;
-        left: 150px;
+    .cards-convencimento-container{
+        width: 100%;
+        margin: 0px;
+    }
+
+    .vantagens-cliente-container {
+        width: 100%;
+        height: auto;
+        margin: 85px auto;
+        padding: 15px;
+    }
+
+    .cards-convencimento-container > .cards-container{
+        height: 35vh;
+        width: 45%;
+        margin: 22px;
+    }
+
+    .cards-container > img {
+        display: inline-flex;
+        position: relative;
+        right: -19px;
+        top: 20px;
+        width: 60px;
+        height: 60px;
     }
 
     .cards-container > h3{
-        font-size: 1.5em;
-        left: 10px;
+        font-size: 1em;
+        text-align: justify;
+        left: 80px;
+        top: -35px;
+    }
+    
+    .cards-container > p{
+        left: 85px;
+        width: 85%;
+        top: -30px;
     }
 
     .pra-voce-que-deseja-item-container{
-        width: 1000px;
+        width: 100%;
+        font-size: 0.8em;
     }
 
     .pra-voce-que-deseja-h1-container {
-        font-size: 1.2em;
+        font-size: 0.9em;
     }
-    
+
+    .pra-voce-que-deseja-list-container > ul, li {
+        font-size: auto;
+    }
+
     .pra-voce-que-deseja-item-container > li > p{
         bottom: 10px;
         line-height: 2;
         font-size: 1.4em;
     }
 
+    .vantagens-cliente-container > .cards-container-servicos {
+        display: inline-flex;
+        border-radius: 5px;
+        box-shadow: 0px 0px 2px 0px #d86722;
+        height: 39vh;
+        width: 48%;
+        margin: 8px;
+        padding: 15px;
+        transition: 0.5s;
+        opacity: 1;
+    }
+
+    .vantagens-cliente-container > .cards-container-servicos:hover{
+        height: 40vh;
+    }
+
+    .cards-container-servicos > img {
+        position: relative;
+        display: inline-flex;
+        top: 30px;
+        width: 60px;
+        height: 60px;
+    }
+
     .cards-container-servicos > h3{
-        font-size: 1.4em;
+        font-size: 1.2em;
     }
 
     .cards-container-servicos > p{
-        top: 55px;
+        top: 30px;
         line-height: 1.5;
-        font-size: 1.3em;
+        font-size: 0.9em;
     }
 
     .eventoDiv{
-        height: 97vh;
+        width: 100%;
+        height: auto;
+        justify-content: center;
+        flex-direction: row;
     }
 
     .mentoriaDiv{
+        width: 45%;
         font-size: 1.4em;
         line-height: 1.35;
+        height: auto;
+    }
+
+    .mentoriaDiv h2{
+        font-size: 1em;
+    }
+
+    .mentoriaDiv p{
+        font-size: 0.9em;
+    }
+
+    .iframeDiv{
+        margin-right: 0px;
+        width: 45%;
+        height: auto;
     }
 
     .parcelasDiv{
-        font-size: 1.4em;
+        font-size: 1em;
         line-height: 1.5;
     }
 
     .caixaDiv{
-        font-size: 1.4em;
+        font-size: 1em;
         line-height: 1.5;
     }
 
     .assinaturaDiv{
-        font-size: 1.4em;
+        font-size: 1em;
         line-height: 1.5;
     }
     
     .perguntas-frequentes{
-        font-size: 1.4em;
+        font-size: 1em;
         line-height: 1.5;
     }
 
     .quemsomos-container{
-        font-size: 1.4em;
+        font-size: 1em;
         line-height: 1.5;
+        height: 80vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: row;
+    }
+
+    .quemsomos_p {
+        width: 100%;
+    }
+
+    .quemsomos_img{
+        width: 75%;
+        height: 55vh;
+        background-image: url(../icones/tiago-tessmann-foto.webp);
+        background-repeat: no-repeat;
+        background-size: cover;
     }
     
     .depoimento-container{
-        font-size: 1.4em;
+        font-size: 1em;
         line-height: 1.5;
     }
 
@@ -1206,28 +1459,133 @@ nav{
     }
 
     .footer{
-        font-size: 1.4em;
+        font-size: 1.2em;
         line-height: 1.5;
+        padding: 0px;
+    }
+
+    .footer-bar {
+        margin-top: 50px;
     }
 
   }
 
+  /* RESPONSIVIDADE PARA TELAS MAIORES QUE 1440px */
 
-@media (min-width: 1650px){
+@media (min-width: 1440px){
+    .button-whatsapp-container {
+        width: 60px;
+        height: 60px;
+        margin-top: 655px;
+        margin-left: 92%;
+    }
 
-  .eventoDiv{
-    height: 75vh;
+    .pq-sistema-funcionaparamim-container {
+        font-size: 1.4em;
+    }
+
+    .h1-funcionaparamim-container{
+        margin-top: 150px;
+    }
+    .sistema-funcionaparamim-container{
+        margin-bottom: 120px;
+    }
+
+    .cards-motivos-do-sistema > p {
+        font-size: 1.3em;
+    }
+
+    .cards-container > img {
+        top: -10px;
+    }
+
+    .cards-container > h3 {
+        font-size: 1.4em;
+        left: 22px;
+        top: -35px;
+    }
+
+    .cards-container > p{
+        font-size: 1.4em;
+    }
+
+    .cards-convencimento-container > .cards-container {
+        height: 35vh;
+    }
+
+    .sistema-container-txt > p {
+        font-size: 1.7em;
+    }
+
+    .chamada-container > p {
+        font-size: 1.7em;
+    }
+
+    .pra-voce-que-deseja-list-container > ul, li{
+        font-size: 1.3em;
+    }
+
+    .cards-container-servicos > p {
+        font-size: 1.4em;
+    }
+
+    .mentoriaDiv p {
+        font-size: 1.2em;
+    }
+
+    .mentoriaDiv h2 {
+        font-size: 1.4em;
+    }
+
+    .parcelasDiv {
+        font-size: 1.4em;
+    }
+
+    .caixaDiv {
+        font-size: 1.4em;
+    }
+
+    .assinaturaDiv {
+        font-size: 1.4em;
+    }
+
+    .perguntas-frequentes {
+        font-size: 1.4em;
+    }
+
+    .quemsomos-container {
+        font-size: 1.4em;
+    }
+
+    /*Configuração footer*/
+    .footer {
+        font-size: 1.3em;
+    }
+
+    .link > img {
+        width: 50px;
+        height: 50px;
+    }
   }
-}
 
-@media (max-width: 1680px){
+  /* RESPONSIVIDADE PARA TELAS MAIORES QUE 1680px */
+
+@media (min-width: 1680px){
 
     .intro-container > .chamada-container {
-        height: 90vh;
+        height: 70vh;
     }
 
     .button-whatsapp-container {
-        margin-top: 46%;
+        margin-top: 750px;
+    }
+
+    .sistema-container{
+        height: 43vh;
+    }
+
+    .sistema-funcionaparamim-container{
+        width: 90%;
     }
 
     .h1-funcionaparamim-container {
@@ -1238,7 +1596,7 @@ nav{
         margin: 9px;
     }
     .cards-motivos-do-sistema > p {
-        font-size: 1.3em;
+        font-size: 1.5em;
         line-height: 1;
     }
 
@@ -1265,12 +1623,27 @@ nav{
         left: 35px;
     }
 
+    .cards-container > img{
+        width: 70px;
+        height: 70px;
+    }
+
     .pra-voce-que-deseja-container {
         margin: auto;
     }
 
-    .cards-container-servicos{
-        width: 46%;
+    .pra-voce-que-deseja-h1-container{
+        font-size: 1.2em;
+    }
+
+    .vantagens-cliente-container > .cards-container-servicos{
+        width: 48%;
+        margin-left: 17px;
+        height: 25vh;
+    }
+
+    .vantagens-cliente-container > .cards-container-servicos:hover{
+        height: 26vh;
     }
 
     .cards-container-servicos > p {
@@ -1281,24 +1654,43 @@ nav{
 
     .eventoDiv {
         width: 95%;
-        height: 90vh;
+        height: auto;
     }
 
     .pagina-link {
         margin-top: 5px;
     }
 
-    .localizacao > a > p {
-        margin: auto;
-        font-size: 1.1em;
+    .footer {
+        font-size: 1.5em;
     }
 
-    .logo-footer {
-        width: 22%;
+    .footer > .logo-footer {
+        width: 20%;
+        height: 35vh;
+        display: flex;
+    }
+
+    .footer > .localizacao{
+        width: auto;
+    }
+
+    .localizacao > a > p {
+        margin: auto;
     }
 
     .footer-bar{
         margin-top: 35px;
     }
   }
+
+@media (min-width: 1920px){
+    .sistema-funcionaparamim-container{
+        margin-bottom: 105px;
+    }
+
+    .quemsomos-container{
+        width: 85%;
+    }
+}
   
