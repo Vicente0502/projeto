@@ -931,6 +931,502 @@ nav{
     transform: translateY(0);
   }
 
+   /* RESPONSIVIDADE PARA PEQUENAS TELAS */
+
+   @media (min-width: 320px) and (max-width: 600px){
+    .container {
+        box-sizing: border-box;
+        /* overflow-x: hidden; */
+    }
+
+    .header {
+        width: 94%;
+    }
+
+    .navbar-list {
+        display: none;
+    }
+
+    .main {
+        width: 93%;
+    }
+
+    .button-whatsapp-container {
+        display: none;
+    }
+
+    .intro-container {
+        display: grid;
+        grid-template-rows: auto auto;
+        width: 100%;
+        margin: 0px;
+        min-height: 830px;
+        padding: 10px;
+        /* background-color: #211e2d; */
+    }
+
+    .video-container {
+        order: 1;
+        width: 100%;
+        height: 100%;
+      }
+    
+    .chamada-container {
+        order: 2;
+        width: 98%;
+        height: 100%;
+        margin: auto;
+        /* background-color: blue; */
+      }
+
+
+    .chamada-container > p{
+        margin: 0px;
+        font-size: 1rem;
+        text-align: justify;
+        text-indent: 10px;
+    }
+    
+    .chamada-container > h1{
+        width: 100%;
+        margin: 0px;
+        padding: 50px 0px 15px 0px;
+        text-align: center;
+        font-size: 1.3rem;
+    }
+
+    .btn {
+        display: flex;
+        margin: 0px;
+        padding: 20px 30px 20px 30px;
+        justify-content: center;
+        align-content: center;
+        /* background-color: #000; */
+    }
+
+    .button-landingpage{
+        margin: auto;
+        width: 100%;
+        font-size: 1.2rem;
+        padding: 5px;
+        background-color: #ffaa00c4;
+    }
+
+    .sistema-container {
+        display: grid;
+        grid-template-rows: auto auto;
+        min-height: 320px;
+        width: 100%;
+        margin: 0px;
+    }
+
+    .sistema-container-txt {
+        order: 1;
+        width: 100%;
+        margin: auto;
+        text-align: justify;
+    }
+
+    .sistema-container-txt > h1 {
+        font-size: 1.3rem;
+        text-align: center;
+        padding-bottom: 10px;
+    }
+
+    .sistema-container-txt > p {
+        font-size: 1rem;
+    }
+
+    .sistema-container-img{
+        display: none;
+        margin-bottom: 20px;
+        order: 2;
+        width: 100%;
+        height: 20vh;
+        margin-bottom: 100px;
+        background-color: #BC9D65;
+    }
+    
+    .sistema-container-img > img{
+        display: flex;
+        margin: auto;
+        width: 100%;
+        height: 100%;
+    }
+
+    .h1-funcionaparamim-container {
+        display: flex;
+        width: 100%;
+        margin-top: 0px;
+        margin: 0px auto;
+        padding-bottom: 10px;
+    }
+
+    .h1-funcionaparamim-container > h1 {
+        margin-bottom: 10px;
+        width: 100%;
+        font-size: 1.3rem;
+        margin: 0px auto;
+    }
+
+    .sistema-funcionaparamim-container {
+        display: grid;
+        width: 100%;
+        margin: 0px;
+        min-height: 900px;
+        padding: 0px;
+        grid-template-rows: auto;
+        /* background-color: #3b21a1; */
+    }
+
+    .pq-sistema-funcionaparamim-container {
+        width: 100%;
+        margin: 0;
+    }
+
+    .pq-sistema-funcionaparamim-container > p {
+        order: 1;
+        width: 90%;
+        margin: 0px auto;
+        font-size: 1rem;
+        text-align: justify;
+        margin-top: 0;
+    }
+
+    .pq-sistema-funcionaparamim-container-img {
+        order: 2;
+        width: 341px;
+        height: 150px;
+    }
+
+    .motivos-do-sistema-container {
+        order: 3;
+        width: 100%;
+        min-height: 520px;
+        /* background-color: #a12190; */
+        flex-wrap: wrap;
+        margin: auto;
+        padding: 0px;
+    }
+
+    .motivos-do-sistema-container > p{
+        display: none;
+        font-size: 1rem;
+    }
+
+    .cards-motivos-do-sistema {
+        display: flex;
+        width: 90%;
+        padding: 0px;
+        margin: 0px;
+        height: 10vh;
+        font-size: 0.6rem;
+    }
+
+    .cards-motivos-do-sistema > img {
+        width: 50px;
+        height: 50px;
+    } 
+    
+    .cards-motivos-do-sistema > p{
+        position: static;
+        text-align: justify;
+        margin-left: 5px;
+    }
+
+    .cards-convencimento-container {
+        display: flex;
+        grid-template-rows: auto;
+        width: 100%;
+        height: 800px;
+        margin: 0;
+        padding: 0px;
+        /* background-color: #3b21a1; */
+    }
+
+    .cards-container {
+        width: 100%;
+        display: flex;
+        padding: 0px;
+        margin: 0px;
+        height: 0px;
+        min-height: 200px;
+        font-size: 0.5rem;
+        flex-wrap: wrap;
+        /* background-color: #8f2323; */
+    }
+
+    .cards-container > h3 {
+        width: 85%;
+        height: 40px;
+        text-align: justify;
+        position: static;
+        margin-left: 5px;
+        font-size: 0.8rem;
+    }
+
+    .cards-container > p {
+        margin: 0px auto;
+        display: inline-block;
+        width: 100%;
+        position: static;
+        /* background-color: #d1afaf; */
+    }
+
+    .cards-container > img {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .pra-voce-que-deseja-container{
+        margin: 0px;
+        padding: 0px;
+        width: 100%;
+        border-bottom: 1px solid #0000001f;
+        border-top: 1px solid #0000001f;
+        /* background-color: #211e2d; */
+    }
+
+    .pra-voce-que-deseja-h1-container{
+        text-align: center;
+        width: 95%;
+        font-size: 0.5rem;
+        margin-top: 10px;
+    }
+
+    .pra-voce-que-deseja-list-container{
+        margin: 30px 50px;
+        text-align: center;
+    }
+
+    .pra-voce-que-deseja-item-container > li > p{
+        font-size: 0.8rem;
+        bottom: 25px;
+        position: relative;
+    }
+
+    .pra-voce-que-deseja-list-container > ul{
+        list-style-image: url('../icones/1.png');
+    }
+
+    .pra-voce-que-deseja-item-container{
+        text-align: center;
+        width: 100%;
+        margin: auto;
+    }
+
+    .pra-voce-que-deseja-list-container > ul,li{
+        margin: 0px;
+        text-align: justify;
+        font-size: 0.6rem;
+    }
+
+    .vantagens-cliente-container {
+        display: none;
+        grid-template-rows: auto auto;
+        width: 100%;
+        height: auto;
+        margin: 0px;
+        background-color: #211e2d;
+        flex-wrap: wrap;
+    }
+
+    .h1-vantagens-cliente-container {
+        font-size: 0.6rem;
+        text-align: center;
+        width: 95%;
+    }
+
+    .cards-container-servicos {
+        display: flex;
+        width: 100%;
+        border-radius: 5px;
+        box-shadow: 0px 0px 2px 0px #d86722;
+        height: auto;
+        margin: 0px;
+        padding: 0px;
+        transition: 0.5s;
+        opacity: 1;
+        background-color: #8f2323;
+    }
+
+    .cards-container-servicos > img {
+        width: 45px;
+        height: 45px;
+    }
+
+    .cards-container-servicos > p {
+        width: 100%;
+    }
+
+    .cards-container-servicos > h3 {
+        width: 100%;
+    }
+
+    .eventoDiv {
+        grid-template-rows: auto auto;
+        width: 100%;
+        min-height: 700px;
+        margin: auto;
+        margin-top: 10px;
+        flex-wrap: wrap;
+        /* background-color: #211e2d; */
+    }
+
+    .iframeDiv{
+        order: 1;
+        width: 100%;
+        height: 250px;
+        margin: auto;
+        margin: 0px;
+    }
+
+    .iframeDiv h3 {
+        font-size: 1rem;
+    }
+
+    .video {
+        width: 100%;
+        max-height: 200px;
+    }
+
+    .mentoriaDiv {
+        order: 2;
+        width: 100%;
+        height: 400px;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .mentoriaDiv > h2  {
+        font-size: 1rem;
+        width: 100%;
+        text-align: center;
+    }
+
+    .mentoriaDiv > p {
+        width: 95%;
+        font-size: 0.9rem;
+    }
+
+    .parcelasDiv {
+        width: 100%;
+        margin: auto;
+    }
+
+    .parcelasDiv > h2 {
+        width: 100%;
+        font-size: 1.2rem;
+    }
+
+    .parcelasDiv > h1 {
+        width: 100%;
+        font-size: 2rem;
+        width: 100%;
+        text-align: center;
+    }
+
+    .parcelasDiv > p {
+        width: 100%;
+        font-size: 1.2rem;
+    }
+
+    .caixaDiv {
+        width: 100%;
+        margin: 10px 0px 20px 0px;
+        padding: 10px;
+    }
+
+    .caixaDiv > h2 {
+        font-size: 1.3rem;
+        text-align: center;
+    }
+
+    .caixaDiv > p {
+        font-size: 0.9rem;
+        text-align: justify;
+    }
+
+    .assinaturaDiv {
+        margin: 10px auto;
+        padding: 10px;
+    }
+
+    .assinaturaDiv h1 {
+        font-size: 1.2rem;
+        width: 100%;
+        margin: 0px;
+    }
+
+    .assinaturaDiv p {
+        font-size: 1rem;
+        width: 100%;
+        margin: 10px 0px;
+        text-align: justify;
+    }
+
+    .perguntas-frequentes {
+        width: 100%;
+        margin: auto;
+        padding: 10px;
+    }
+
+    .perguntas-frequentes > h1 {
+        font-size: 1.4rem;
+        margin-bottom: 20px;
+    }
+
+    .perguntas-frequentes-details > p {
+        text-align: justify;
+        margin: 10px 0px;
+    }
+
+    .quemsomos-container {
+        display: grid;
+        grid-template-rows: auto auto;
+        width: 100%;
+        height: auto;
+        margin: auto;
+        /* background-color: #211e2d; */
+    }
+
+    .quemsomos_img {
+        order: 1;
+        margin: auto;
+        width:300px;
+        height: 200px;  
+    }
+
+    .quemsomos_p {
+        order: 2;
+        width: 100%;
+        padding: 0px;
+    }
+
+    .quemsomos_p > h1 {
+        font-size: 1.4rem;
+        text-align: center;
+    }
+
+    .quemsomos_p > p {
+        font-size: 0.9rem;
+        text-align: justify;
+    }
+
+    .depoimento-section {
+        margin: 0px auto;
+    }
+
+    .footer {
+        display: none;
+        width: 99vw;
+    }
+
+    .footer-bar {
+        display: none;
+    }
+
+   }
 
   /* RESPONSIVIDADE PARA TELAS PEQUENAS E LAPTOPS */
 
@@ -1050,284 +1546,6 @@ nav{
     }
 
   }
-
-   /* RESPONSIVIDADE PARA PEQUENAS TELAS */
-
-   @media (min-width: 320px) and (max-width: 600px){
-    .container {
-        box-sizing: border-box;
-        /* overflow-x: hidden; */
-    }
-
-    .header {
-        width: 90%;
-    }
-
-    .navbar-list {
-        display: none;
-    }
-
-    .main {
-        width: 90%;
-    }
-
-    .button-whatsapp-container {
-        display: none;
-    }
-
-    .intro-container {
-        display: grid;
-        grid-template-rows: auto auto;
-        width: 100%;
-        margin: 0px;
-        min-height: 830px;
-        /* background-color: #211e2d; */
-    }
-
-    .video-container {
-        order: 1;
-        width: 100%;
-        height: 100%;
-      }
-    
-    .chamada-container {
-        order: 2;
-        width: 98%;
-        height: 100%;
-        margin: auto;
-        /* background-color: blue; */
-      }
-
-
-    .chamada-container > p{
-        margin: 0px;
-        font-size: 1rem;
-        text-align: justify;
-        text-indent: 10px;
-    }
-    
-    .chamada-container > h1{
-        width: 100%;
-        margin: 0px;
-        padding: 50px 0px 15px 0px;
-        text-align: center;
-        font-size: 1.3rem;
-    }
-
-    .btn {
-        display: flex;
-        margin: 0px;
-        padding: 20px 30px 20px 30px;
-        justify-content: center;
-        align-content: center;
-        /* background-color: #000; */
-    }
-
-    .button-landingpage{
-        margin: auto;
-        width: 100%;
-        font-size: 1.2rem;
-        padding: 5px;
-        background-color: #ffaa00c4;
-    }
-
-    .sistema-container {
-        display: grid;
-        grid-template-rows: auto auto;
-        min-height: 320px;
-        width: 100%;
-        margin: 0px;
-    }
-
-    .sistema-container-txt {
-        order: 1;
-        width: 100%;
-        margin: auto;
-        text-align: justify;
-    }
-
-    .sistema-container-txt > h1 {
-        font-size: 1.3rem;
-        text-align: center;
-        padding-bottom: 10px;
-    }
-
-    .sistema-container-txt > p {
-        font-size: 1rem;
-    }
-
-    .sistema-container-img{
-        display: none;
-        margin-bottom: 20px;
-        order: 2;
-        width: 100%;
-        height: 20vh;
-        margin-bottom: 100px;
-        background-color: #BC9D65;
-    }
-    
-    .sistema-container-img > img{
-        display: flex;
-        margin: auto;
-        width: 100%;
-        height: 100%;
-    }
-
-    .h1-funcionaparamim-container {
-        width: 100%;
-    }
-
-    .h1-funcionaparamim-container > h1 {
-        margin-bottom: 10px;
-        width: 100%;
-        font-size: 1.3rem;
-    }
-
-    .sistema-funcionaparamim-container {
-        display: grid;
-        width: 100%;
-        margin: 0px;
-        min-height: 900px;
-        padding: 0px;
-        grid-template-rows: auto;
-        /* background-color: #3b21a1; */
-    }
-
-    .pq-sistema-funcionaparamim-container {
-        width: 100%;
-        margin: 0;
-    }
-
-    .pq-sistema-funcionaparamim-container > p {
-        order: 1;
-        width: 90%;
-        margin: 0px auto;
-        font-size: 1rem;
-        text-align: justify;
-        margin-top: 0;
-    }
-
-    .pq-sistema-funcionaparamim-container-img {
-        order: 2;
-        width: 341px;
-        height: 150px;
-    }
-
-    .motivos-do-sistema-container {
-        order: 3;
-        width: 100%;
-        min-height: 520px;
-        /* background-color: #a12190; */
-        flex-wrap: wrap;
-        margin: auto;
-        padding: 0px;
-    }
-
-    .motivos-do-sistema-container > p{
-        display: none;
-        font-size: 1rem;
-    }
-
-    .cards-motivos-do-sistema {
-        display: flex;
-        width: 100%;
-        padding: 0px;
-        margin: 0px;
-        height: 10vh;
-        font-size: 0.8rem;
-    }
-
-    .cards-motivos-do-sistema > img {
-        width: 50px;
-        height: 50px;
-    } 
-    
-    .cards-motivos-do-sistema  p{
-        position: static;
-        text-align: justify;
-        margin-left: 5px;
-    }
-
-    .cards-convencimento-container {
-        display: flex;
-        grid-template-rows: auto;
-        width: 100%;
-        min-height: 40px;
-        margin: 0;
-        padding: 0px;
-        /* background-color: #3b21a1; */
-    }
-
-    .cards-container {
-        width: 100%;
-        background-color: #8f2323;
-        display: flex;
-        padding: 0px;
-        margin: 0px;
-        min-height: 200px;
-        font-size: 0.5rem;
-        flex-wrap: wrap;
-    }
-
-    .cards-container > h3 {
-        width: 85%;
-        height: 40px;
-        text-align: justify;
-        position: static;
-        margin-left: 5px;
-        font-size: 0.8rem;
-    }
-
-    .cards-container > p {
-        display: inline-block;
-        width: 100%;
-        position: static;
-        background-color: #d1afaf;
-    }
-
-    .cards-container > img {
-        width: 40px;
-        height: 40px;
-    }
-
-    /* reorganizar */
-
-.vantagens-cliente-container, .eventoDiv, .parcelasDiv, .quemsomos-container {
-        display: none;
-        grid-template-rows: auto auto;
-        width: 100%;
-        margin: auto;
-        background-color: #211e2d;
-    }
-
-    .pra-voce-que-deseja-container {
-        display: none;
-        grid-template-rows: auto auto auto;
-        width: 100%;
-        margin: auto;
-        background-color: #3b21a1;
-        font-size: 0.1rem;
-    }
-
-    .pra-voce-que-deseja-h1-container {
-        text-align: center;
-    }
-
-    .pra-voce-que-deseja-item-container li {
-        width: 45%;
-        background-color: #8f2323;
-    }
-    
-    .footer {
-        display: none;
-        width: 99vw;
-    }
-
-    .footer-bar {
-        display: none;
-    }
-
-   }
 
   /* RESPONSIVIDADE PARA TELAS MAIORES QUE 1024PX*/
 
