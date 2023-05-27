@@ -146,9 +146,9 @@ nav{
     align-items: center;
 }
 
-.intro-container > .chamada-container{
+.chamada-container{
     width: 45%;
-    height: 65vh;
+    height: 65%;
     margin: 5px;
     text-align: justify;
     line-height: 30px;
@@ -279,7 +279,7 @@ nav{
     display: inline-flex;
     flex-direction: column;
     width: 50%;
-    height: 60vh;
+    height: 99%;
     font-size: 1.2em;
 
 }
@@ -1050,6 +1050,284 @@ nav{
     }
 
   }
+
+   /* RESPONSIVIDADE PARA PEQUENAS TELAS */
+
+   @media (min-width: 320px) and (max-width: 600px){
+    .container {
+        box-sizing: border-box;
+        /* overflow-x: hidden; */
+    }
+
+    .header {
+        width: 90%;
+    }
+
+    .navbar-list {
+        display: none;
+    }
+
+    .main {
+        width: 90%;
+    }
+
+    .button-whatsapp-container {
+        display: none;
+    }
+
+    .intro-container {
+        display: grid;
+        grid-template-rows: auto auto;
+        width: 100%;
+        margin: 0px;
+        min-height: 830px;
+        /* background-color: #211e2d; */
+    }
+
+    .video-container {
+        order: 1;
+        width: 100%;
+        height: 100%;
+      }
+    
+    .chamada-container {
+        order: 2;
+        width: 98%;
+        height: 100%;
+        margin: auto;
+        /* background-color: blue; */
+      }
+
+
+    .chamada-container > p{
+        margin: 0px;
+        font-size: 1rem;
+        text-align: justify;
+        text-indent: 10px;
+    }
+    
+    .chamada-container > h1{
+        width: 100%;
+        margin: 0px;
+        padding: 50px 0px 15px 0px;
+        text-align: center;
+        font-size: 1.3rem;
+    }
+
+    .btn {
+        display: flex;
+        margin: 0px;
+        padding: 20px 30px 20px 30px;
+        justify-content: center;
+        align-content: center;
+        /* background-color: #000; */
+    }
+
+    .button-landingpage{
+        margin: auto;
+        width: 100%;
+        font-size: 1.2rem;
+        padding: 5px;
+        background-color: #ffaa00c4;
+    }
+
+    .sistema-container {
+        display: grid;
+        grid-template-rows: auto auto;
+        min-height: 320px;
+        width: 100%;
+        margin: 0px;
+    }
+
+    .sistema-container-txt {
+        order: 1;
+        width: 100%;
+        margin: auto;
+        text-align: justify;
+    }
+
+    .sistema-container-txt > h1 {
+        font-size: 1.3rem;
+        text-align: center;
+        padding-bottom: 10px;
+    }
+
+    .sistema-container-txt > p {
+        font-size: 1rem;
+    }
+
+    .sistema-container-img{
+        display: none;
+        margin-bottom: 20px;
+        order: 2;
+        width: 100%;
+        height: 20vh;
+        margin-bottom: 100px;
+        background-color: #BC9D65;
+    }
+    
+    .sistema-container-img > img{
+        display: flex;
+        margin: auto;
+        width: 100%;
+        height: 100%;
+    }
+
+    .h1-funcionaparamim-container {
+        width: 100%;
+    }
+
+    .h1-funcionaparamim-container > h1 {
+        margin-bottom: 10px;
+        width: 100%;
+        font-size: 1.3rem;
+    }
+
+    .sistema-funcionaparamim-container {
+        display: grid;
+        width: 100%;
+        margin: 0px;
+        min-height: 900px;
+        padding: 0px;
+        grid-template-rows: auto;
+        /* background-color: #3b21a1; */
+    }
+
+    .pq-sistema-funcionaparamim-container {
+        width: 100%;
+        margin: 0;
+    }
+
+    .pq-sistema-funcionaparamim-container > p {
+        order: 1;
+        width: 90%;
+        margin: 0px auto;
+        font-size: 1rem;
+        text-align: justify;
+        margin-top: 0;
+    }
+
+    .pq-sistema-funcionaparamim-container-img {
+        order: 2;
+        width: 341px;
+        height: 150px;
+    }
+
+    .motivos-do-sistema-container {
+        order: 3;
+        width: 100%;
+        min-height: 520px;
+        /* background-color: #a12190; */
+        flex-wrap: wrap;
+        margin: auto;
+        padding: 0px;
+    }
+
+    .motivos-do-sistema-container > p{
+        display: none;
+        font-size: 1rem;
+    }
+
+    .cards-motivos-do-sistema {
+        display: flex;
+        width: 100%;
+        padding: 0px;
+        margin: 0px;
+        height: 10vh;
+        font-size: 0.8rem;
+    }
+
+    .cards-motivos-do-sistema > img {
+        width: 50px;
+        height: 50px;
+    } 
+    
+    .cards-motivos-do-sistema  p{
+        position: static;
+        text-align: justify;
+        margin-left: 5px;
+    }
+
+    .cards-convencimento-container {
+        display: flex;
+        grid-template-rows: auto;
+        width: 100%;
+        min-height: 40px;
+        margin: 0;
+        padding: 0px;
+        /* background-color: #3b21a1; */
+    }
+
+    .cards-container {
+        width: 100%;
+        background-color: #8f2323;
+        display: flex;
+        padding: 0px;
+        margin: 0px;
+        min-height: 200px;
+        font-size: 0.5rem;
+        flex-wrap: wrap;
+    }
+
+    .cards-container > h3 {
+        width: 85%;
+        height: 40px;
+        text-align: justify;
+        position: static;
+        margin-left: 5px;
+        font-size: 0.8rem;
+    }
+
+    .cards-container > p {
+        display: inline-block;
+        width: 100%;
+        position: static;
+        background-color: #d1afaf;
+    }
+
+    .cards-container > img {
+        width: 40px;
+        height: 40px;
+    }
+
+    /* reorganizar */
+
+.vantagens-cliente-container, .eventoDiv, .parcelasDiv, .quemsomos-container {
+        display: none;
+        grid-template-rows: auto auto;
+        width: 100%;
+        margin: auto;
+        background-color: #211e2d;
+    }
+
+    .pra-voce-que-deseja-container {
+        display: none;
+        grid-template-rows: auto auto auto;
+        width: 100%;
+        margin: auto;
+        background-color: #3b21a1;
+        font-size: 0.1rem;
+    }
+
+    .pra-voce-que-deseja-h1-container {
+        text-align: center;
+    }
+
+    .pra-voce-que-deseja-item-container li {
+        width: 45%;
+        background-color: #8f2323;
+    }
+    
+    .footer {
+        display: none;
+        width: 99vw;
+    }
+
+    .footer-bar {
+        display: none;
+    }
+
+   }
 
   /* RESPONSIVIDADE PARA TELAS MAIORES QUE 1024PX*/
 
