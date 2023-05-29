@@ -840,7 +840,7 @@ nav{
 
   .pagina{
     border-right: 1px solid;
-    width: 15%;
+    width: 50%;
     padding: 15px;
     height: 30vh;
   }
@@ -935,10 +935,14 @@ nav{
     height: 50px;
   }
 
+  .pagina_localizacao {
+    display: flex;
+    width: 50%;
+  }
 
   /* CSS localização */
   .localizacao{
-    width: 22%;
+    width: 50%;
     height: 30vh;
     padding: 15px;
     border-right: 1px solid;
@@ -1543,7 +1547,6 @@ nav{
     .pagina {
         width: 40%;
         height: auto;
-        
         padding: 5px 0px 0px 10px;
     }
 
@@ -1580,16 +1583,18 @@ nav{
     .redes-sociais {
         width: 100%;
         padding: 0px;
-        margin: 10px auto;
+        margin: auto;
     }
 
     .redes-sociais > h2 {
+        width: 100%;
+        text-align: center;
         font-size: 0.9rem;
         margin-bottom: 0px;
     }
 
     .redes-sociais > ul {
-        width: 100%;
+        width: 70%;
         height: auto;
     }
 
@@ -1607,6 +1612,7 @@ nav{
     }
 
     .btn-footer {
+        width: 50%;
         margin: 20px;
     }
 
