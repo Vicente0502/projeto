@@ -1009,7 +1009,7 @@ nav{
     }
 
     .main {
-        width: 99%;
+        width: 100%;
     }
 
     .button-whatsapp-container {
@@ -1020,7 +1020,7 @@ nav{
         display: grid;
         grid-template-rows: auto auto;
         width: 100%;
-        margin: 0px;
+        margin: auto;
         height: auto;
         /* min-height: 830px; */
         padding: 10px;
@@ -1036,32 +1036,34 @@ nav{
     
     .chamada-container {
         order: 2;
-        width: 98%;
-        height: 100%;
+        width: 100%;
+        height: auto;
         margin: auto;
         /* background-color: blue; */
       }
 
 
     .chamada-container > p{
-        margin: 0px;
+        width: 90%;
+        margin: auto;
         font-size: 1rem;
         text-align: justify;
         text-indent: 10px;
     }
     
     .chamada-container > h1{
-        width: 100%;
-        margin: 0px;
-        padding: 50px 0px 15px 0px;
+        width: 90%;
+        margin: auto;
+        padding: 20px 0px 15px 0px;
         text-align: center;
         font-size: 1.3rem;
     }
 
     .btn {
-        display: flex;
-        margin: 0px;
-        padding: 20px 20px 10px 20px;
+        width: 100%;
+        height: auto;
+        margin: auto;
+        padding: 10px;
         justify-content: center;
         align-content: center;
         /* background-color: #000; */
@@ -1396,12 +1398,15 @@ nav{
     }
 
     .parcelasDiv {
+        display: none;
         width: 100%;
+        height: auto;
         margin: auto;
     }
 
     .parcelasDiv > h2 {
-        width: 100%;
+        width: 90%;
+        margin: auto;
         font-size: 1.2rem;
     }
 
@@ -1413,8 +1418,9 @@ nav{
     }
 
     .parcelasDiv > p {
-        width: 100%;
-        font-size: 1.2rem;
+        width: 90%;
+        margin: auto;
+        font-size: 1.1rem;
     }
 
     .caixaDiv {
@@ -1508,12 +1514,79 @@ nav{
     }
 
     .footer {
-        display: none;
+        width: 100%;
+        height: auto;
+        margin: auto;
+        flex-wrap: wrap;
+        padding: 0px;
+    }
+
+    .logo-footer {
+        width: 20px;
+        height: 20px;
+    }
+
+    .pagina {
+        width: 40%;
+        height: auto;
+        border: none;
+        padding: 0px;
+    }
+
+    .pagina-h2 {
+        font-size: 0.5rem;
+    }
+
+    .list-link {
+        font-size: 0.4rem;
+    }
+
+    .localizacao {
+        width: 40%;
+        height: auto;
+        border: none;
+        padding: 0px;
+    }
+
+    .localizacao-h2 {
+        font-size: 0.5rem;
+        margin-bottom: 0px;
+    }
+
+    .localizacao > a {
+        font-size: 0.5rem;
+    }
+
+    .redes-sociais {
         width: 100%;
     }
 
+    .redes-sociais > h2 {
+        font-size: 0.7rem;
+        margin-bottom: 0px;
+    }
+
+    .redes-sociais > ul {
+        width: 100%;
+    }
+
+    .redes {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .redes > a {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
     .footer-bar {
-        display: none;
+        width: 100%;
+        height: auto;
+        font-size: 0.7rem;
     }
 
    }
