@@ -1519,39 +1519,57 @@ nav{
         width: 100%;
         height: auto;
         margin: auto;
-        flex-wrap: wrap;
         padding: 0px;
+        align-items: flex-start;
+        justify-content: flex-start;
     }
 
     .logo-footer {
-        width: 20px;
-        height: 20px;
+        width: 30px;
+        height: 30px;
+    }
+
+    .pagina_localizacao {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        margin: auto;
+        padding: 10px;
+        justify-content: center;
+        align-items: flex-start;
     }
 
     .pagina {
         width: 40%;
         height: auto;
-        border: none;
-        padding: 0px;
+        
+        padding: 5px 0px 0px 10px;
     }
 
     .pagina-h2 {
-        font-size: 0.5rem;
+        font-size: 0.6rem;
     }
 
     .list-link {
         font-size: 0.4rem;
+        margin-top: 5px;
     }
+
+    .pagina-link{
+        margin-top: 5px;
+        left: 5px;
+      }
 
     .localizacao {
         width: 40%;
         height: auto;
         border: none;
-        padding: 0px;
+        padding: 0px 0px 0px 10px;
     }
 
     .localizacao-h2 {
-        font-size: 0.5rem;
+        font-size: 0.6rem;
         margin-bottom: 0px;
     }
 
@@ -1561,15 +1579,18 @@ nav{
 
     .redes-sociais {
         width: 100%;
+        padding: 0px;
+        margin: 10px auto;
     }
 
     .redes-sociais > h2 {
-        font-size: 0.7rem;
+        font-size: 0.9rem;
         margin-bottom: 0px;
     }
 
     .redes-sociais > ul {
         width: 100%;
+        height: auto;
     }
 
     .redes {
@@ -1585,6 +1606,10 @@ nav{
         align-items: center;
     }
 
+    .btn-footer {
+        margin: 20px;
+    }
+
     .footer-bar {
         width: 100%;
         height: auto;
@@ -1595,7 +1620,7 @@ nav{
 
   /* RESPONSIVIDADE PARA TELAS PEQUENAS E LAPTOPS */
 
-  @media (min-width: 600px){
+  @media (min-width: 601px){
     .button-whatsapp-container{
         margin-top: 550px;
         margin-left: 90%;
