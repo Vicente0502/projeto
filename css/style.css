@@ -62,15 +62,14 @@
     width: 100%;
     height: 2.5px;
     background-color: #ff8100;
-    border-radius: 4px;
     scale: 1 4;
     z-index: -1;
     transform-origin: top;
-    transition: scale 1s;
+    transition: scale 0.3s;
 }
 
 .span-gestao:hover::before{
-    scale: 1 10;
+    scale: 1 11;
     transform-origin: bottom;
 }
 
@@ -89,15 +88,14 @@
     width: 100%;
     height: 2.5px;
     background-color: #ff8100;
-    border-radius: 4px;
     scale: 1 4;
     z-index: -1;
     transform-origin: top;
-    transition: scale 1s;
+    transition: scale 0.3s;
 }
 
 .span:hover::before{
-    scale: 1 10;
+    scale: 1 11;
     transform-origin: bottom;
 }
 
@@ -896,8 +894,10 @@ nav{
   }
 
   .link > img{
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
+    border: 2px solid white;
+    border-radius: 50%;
   }
 
   .redes:hover{
@@ -906,20 +906,22 @@ nav{
 
   /* CSS botão footer */
   .btn-footer{
-    margin-top: 25px;
+    margin-top: 40px;
     width: 70%;
     height: 5vh;
     border-radius: 25px;
+    text-align: center;
   }
 
   .button-footer{
-    width: 95%;
+    width: 93%;
     height: 6vh;
     border-radius: 25px;
     border: none;
     font-size: 1em;
     color: white;
     background-color: #f9d5766b;
+    box-shadow: 0px 0px 1px 0px black;
     transition: .2s;
   }
 
@@ -1520,7 +1522,7 @@ nav{
 
   /* RESPONSIVIDADE PARA TELAS PEQUENAS E LAPTOPS */
 
-  @media (min-width: 768px){
+  @media (min-width: 600px){
     .button-whatsapp-container{
         margin-top: 550px;
         margin-left: 90%;
