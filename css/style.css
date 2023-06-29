@@ -23,6 +23,7 @@
     text-decoration: none;
     position: relative;
     display: inline-flex;
+    cursor: pointer;
 }
 
 .link-navbar::before{
@@ -124,6 +125,7 @@ nav{
 .navbar-list{
     list-style: none;
     display: flex;
+    align-items: center;
 }
 /*caracteristicas da lista na tag <li>*/
 .navbar-list li{
@@ -132,8 +134,27 @@ nav{
     font-size: 16px;
 }
 
-.navbar-list li:last-child{
-    margin-right: 15px;
+.btn-navbar{
+    border: none;
+    padding: 10px;
+    border-radius: 30px;
+    background-color: red;
+    color: white;
+    width: 100%;
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 1.2em;
+}
+
+.btn-navbar > .link-navbar{
+    color: white;
+}
+
+.btn-navbar > img{
+    width: 30px;
+    height: 30px;
+    margin: 5px;
 }
 
 .header {
@@ -202,6 +223,7 @@ nav{
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    flex-direction: row-reverse;
 }
 
 .chamada-container{
@@ -259,9 +281,9 @@ nav{
 
 .button-landingpage{
     margin: auto;
-    width: 115%;
-    height: 7vh;
-    font-size: 20px;
+    width: 120%;
+    height: 8vh;
+    font-size: 1.4em;
     padding: 5px;
     background-color: #ffaa00c4;
     border: none;
@@ -283,10 +305,11 @@ nav{
     display: flex;
     top: 35px;
     width: 85%;
-    height: 50vh;
+    height: 60vh;
     margin: auto;
     margin-top: 35px;
     margin-bottom: 35px;
+    flex-direction: row-reverse;
 }
 
 .sistema-container-txt{
@@ -309,28 +332,77 @@ nav{
 
 .sistema-container-img{
     width: 50%;
-    height: 50vh;
+    height: auto;
+    display: inline-flex;
+    align-items: center;
 }
 
 .sistema-container-img > img{
     width: 100%;
-    height: 46vh;
+    height: auto;
 }
 
+/*Solução para o seu negócio*/
+
+.solucao{
+    margin: 185px auto;
+    height: 70vh;
+    width: auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.solucao_logos{
+    display: inline-block;
+    margin: 10px;
+}
+
+.solucao_container {
+    text-align: center;
+    background-color: #ffaa00c4;
+    border-radius: 10px;
+    width: 45%;
+    font-size: 1.4em;
+}
+
+.solucao1_container > h2{
+    margin-bottom: 20px;
+}
+
+/*Carrosel Apolo*/
+
+.carrosel {
+    width: 50%;
+    margin-right: 5px;
+}
+
+
+.carrosel > h3 {
+    text-align: center;
+    background-color: #211e2d;
+    border-radius: 15px 15px 0px 0px;
+    padding: 10px;
+    width: 100%;
+    color: #D5B35D;
+}
+
+.carrosel_container{
+    box-shadow: -8px -9px 2px 0px;
+    border-radius: 15px;
+}
 
 /* DIV O SISTEMA FUNCIONA PARA MIM E PARA QUEM É INDICADO */
 .sistema-funcionaparamim-container{
     display: flex;
     width: 85%;
-    height: 64vh;
-    margin: 35px auto;
+    height: 80vh;
+    margin: 300px auto;
     padding: 5px;
 }
 
 .h1-funcionaparamim-container{
-    margin-top: 85px;
-    text-align: center;
     width: 100%;
+    text-align: initial;
 }
 
 .pq-sistema-funcionaparamim-container{
@@ -344,44 +416,49 @@ nav{
 
 .pq-sistema-funcionaparamim-container-img{
     display: block;
-    background: url('../icones/satisfação\ -\ Copia.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    width: 100%;
-    height: 40vh;
-    margin-top: 10px;
+    text-align: center;
+    width: 50%;
+    height: 70vh;
     border-radius: 5px;
 }
 
 .motivos-do-sistema-container{
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
-    align-content: space-around;
     width: 50%;
     padding: 10px;
+    justify-content: flex-start;
+    align-content: flex-start;
 }
 
 .motivos-do-sistema-container > p{
     font-size: 1.4em;
-    display: none;
+    width: 70%;
+    text-align: justify;
+    position: relative;
+    top: 20px;
 }
 
 
 /* Cards com motivos do sistema */
 .cards-motivos-do-sistema{
-    width: 49%;
+    width: 40%;
     padding: 10px;
-    height: 19vh;
-    margin: 1px;
+    height: 15vh;
+    margin: 15px;
+    position: relative;
+    top: 15px;
 }
 
 .cards-motivos-do-sistema > p{
     position: relative;
     text-align: justify;
+    font-size: 1.3em;
     left: 57px;
     top: -60px;
-    width: 80%;
+    width: 100%;
 }
 
 
@@ -444,9 +521,8 @@ nav{
 }
 
 .pra-voce-que-deseja-item-container{
-    text-align: center;
-    width: 650px;
-    margin: auto;
+    width: 85%;
+    font-size: 0.4em;
 }
 
 .pra-voce-que-deseja-list-container > ul,li{
@@ -471,7 +547,7 @@ nav{
     height: auto;
     margin: 85px auto;
     padding: 15px;
-    /* display: inline-flex; */
+    text-align: center;
 }
 
 .h1-vantagens-cliente-container{
@@ -483,40 +559,27 @@ nav{
 }
 
 .cards-container-servicos{
-    display: inline-flex;
-    width: 45%;
+    display: inline-block;
+    width: 40%;
     border-radius: 5px;
     box-shadow: 0px 0px 2px 0px #d86722;
-    height: 33vh;
+    height: 80vh;
     margin: 20px;
     padding: 15px;
     transition: 0.5s;
     opacity: 1;
 }
 
-.cards-container-servicos:hover{
-    width: 46%;
-    height: 34vh;
-}
-
-.cards-container-servicos:not(.cards-container-servicos:hover){
-    opacity: 0.8;
-}
 
 .cards-container-servicos > img{
     position: relative;
     display: inline-flex;
-    top: 30px;
     width: 80px;
     height: 80px;
 }
 
 .cards-container-servicos > h3{
-    position: relative;
-    left: 30px;
-    height: 7vh;
-    width: auto;
-    display: inline-flex;
+    font-size: 2em;
 }
 
 .cards-container-servicos > p{
@@ -558,6 +621,7 @@ nav{
 .video {
     width: 100%;
     height: 92%;
+
 }
 
 /* Configurando tamanho do iframe */
@@ -840,7 +904,7 @@ nav{
 
   .pagina{
     border-right: 1px solid;
-    width: 50%;
+    width: 15%;
     padding: 15px;
     height: 30vh;
   }
@@ -935,14 +999,10 @@ nav{
     height: 50px;
   }
 
-  .pagina_localizacao {
-    display: flex;
-    width: 50%;
-  }
 
   /* CSS localização */
   .localizacao{
-    width: 50%;
+    width: 22%;
     height: 30vh;
     padding: 15px;
     border-right: 1px solid;
@@ -1015,7 +1075,7 @@ nav{
     }
 
     .main {
-        width: 100%;
+        width: 99%;
     }
 
     .button-whatsapp-container {
@@ -1026,7 +1086,7 @@ nav{
         display: grid;
         grid-template-rows: auto auto;
         width: 100%;
-        margin: auto;
+        margin: 0px;
         height: auto;
         /* min-height: 830px; */
         padding: 10px;
@@ -1042,46 +1102,37 @@ nav{
     
     .chamada-container {
         order: 2;
-        width: 100%;
-        height: auto;
+        width: 98%;
+        height: 100%;
         margin: auto;
         /* background-color: blue; */
       }
 
 
     .chamada-container > p{
-        width: 90%;
-        margin: auto;
+        margin: 0px;
         font-size: 1rem;
         text-align: justify;
         text-indent: 10px;
     }
     
     .chamada-container > h1{
-        width: 90%;
-        margin: auto;
-        padding: 20px 0px 15px 0px;
+        width: 100%;
+        margin: 0px;
+        padding: 50px 0px 15px 0px;
         text-align: center;
         font-size: 1.3rem;
     }
 
     .btn {
-        width: 100%;
-        height: auto;
-        margin: auto;
-        padding: 10px;
+        display: flex;
+        margin: 0px;
+        padding: 20px 20px 10px 20px;
         justify-content: center;
         align-content: center;
         /* background-color: #000; */
     }
 
-    .button-landingpage{
-        margin: auto;
-        width: 100%;
-        font-size: 1.2rem;
-        padding: 5px;
-        background-color: #ffaa00c4;
-    }
 
     .sistema-container {
         display: grid;
@@ -1138,12 +1189,12 @@ nav{
         /* background-color: #8f2323; */
     }
 
-    .h1-funcionaparamim-container > h1 {
+/*    .h1-funcionaparamim-container > h1 {
         margin-bottom: 10px;
         width: 100%;
         font-size: 1.3rem;
         margin: 0px auto;
-    }
+    }*/
 
     .sistema-funcionaparamim-container {
         display: grid;
@@ -1404,15 +1455,12 @@ nav{
     }
 
     .parcelasDiv {
-        display: none;
         width: 100%;
-        height: auto;
         margin: auto;
     }
 
     .parcelasDiv > h2 {
-        width: 90%;
-        margin: auto;
+        width: 100%;
         font-size: 1.2rem;
     }
 
@@ -1424,9 +1472,8 @@ nav{
     }
 
     .parcelasDiv > p {
-        width: 90%;
-        margin: auto;
-        font-size: 1.1rem;
+        width: 100%;
+        font-size: 1.2rem;
     }
 
     .caixaDiv {
@@ -1520,113 +1567,19 @@ nav{
     }
 
     .footer {
+        display: none;
         width: 100%;
-        height: auto;
-        margin: auto;
-        padding: 0px;
-        align-items: flex-start;
-        justify-content: flex-start;
-    }
-
-    .logo-footer {
-        width: 30px;
-        height: 30px;
-    }
-
-    .pagina_localizacao {
-        width: 100%;
-        height: auto;
-        display: flex;
-        flex-wrap: wrap;
-        margin: auto;
-        padding: 10px;
-        justify-content: center;
-        align-items: flex-start;
-    }
-
-    .pagina {
-        width: 40%;
-        height: auto;
-        padding: 5px 0px 0px 10px;
-    }
-
-    .pagina-h2 {
-        font-size: 0.6rem;
-    }
-
-    .list-link {
-        font-size: 0.4rem;
-        margin-top: 5px;
-    }
-
-    .pagina-link{
-        margin-top: 5px;
-        left: 5px;
-      }
-
-    .localizacao {
-        width: 40%;
-        height: auto;
-        border: none;
-        padding: 0px 0px 0px 10px;
-    }
-
-    .localizacao-h2 {
-        font-size: 0.6rem;
-        margin-bottom: 0px;
-    }
-
-    .localizacao > a {
-        font-size: 0.5rem;
-    }
-
-    .redes-sociais {
-        width: 100%;
-        padding: 0px;
-        margin: auto;
-    }
-
-    .redes-sociais > h2 {
-        width: 100%;
-        text-align: center;
-        font-size: 0.9rem;
-        margin-bottom: 0px;
-    }
-
-    .redes-sociais > ul {
-        width: 70%;
-        height: auto;
-    }
-
-    .redes {
-        width: 100%;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .redes > a {
-        display: flex;
-        width: 100%;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .btn-footer {
-        width: 50%;
-        margin: 20px;
     }
 
     .footer-bar {
-        width: 100%;
-        height: auto;
-        font-size: 0.7rem;
+        display: none;
     }
 
    }
 
   /* RESPONSIVIDADE PARA TELAS PEQUENAS E LAPTOPS */
 
-  @media (min-width: 601px){
+  @media (min-width: 600px){
     .button-whatsapp-container{
         margin-top: 550px;
         margin-left: 90%;
@@ -1641,7 +1594,7 @@ nav{
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
-        flex-direction: column-reverse;
+        flex-direction: row-reverse;
     }
 
     .chamada-container > h1 {
@@ -1665,27 +1618,27 @@ nav{
         display: flex;
         top: 35px;
         width: 85%;
-        height: 65vh;
+        /*height: 65vh;*/
         margin: auto;
         margin-top: 35px;
         margin-bottom: 35px;
     }
 
-    .h1-funcionaparamim-container {
+    /*.h1-funcionaparamim-container {
         margin-top: 120px;
         text-align: center;
         width: 100%;
-    }
+    }*/
 
-    .sistema-funcionaparamim-container {
+ /*   .sistema-funcionaparamim-container {
         display: flex;
         width: 95%;
         height: 64vh;
         margin: 35px auto;
         padding: 5px;
-    }
+    }*/
 
-   .sistema-funcionaparamim-container > .motivos-do-sistema-container {
+ /*  .sistema-funcionaparamim-container > .motivos-do-sistema-container {
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
@@ -1694,7 +1647,7 @@ nav{
         padding: 0px;
         justify-content: space-between;
     }
-
+*/
     .cards-motivos-do-sistema{
         margin: 7px;
     }
@@ -1715,10 +1668,9 @@ nav{
     }
 
     .vantagens-cliente-container > .cards-container-servicos {
-        display: inline-flex;
         border-radius: 5px;
         box-shadow: 0px 0px 2px 0px #d86722;
-        height: 28vh;
+        /*height: 28vh;*/
         width: auto;
         margin: 20px;
         padding: 15px;
@@ -1726,9 +1678,9 @@ nav{
         opacity: 1;
     }
 
-    .vantagens-cliente-container > .cards-container-servicos:hover {
+    /*.vantagens-cliente-container > .cards-container-servicos:hover {
         height: 29vh;
-    }
+    }*/
 
     .eventoDiv {
         display: flex;
@@ -1805,13 +1757,6 @@ nav{
         font-size: 1.2em;
     }
 
-    .button-landingpage {
-        width: 103%;
-        height: 8vh;
-        font-size: 1.5em;
-        padding: 10px;
-    }
-
     .button-whatsapp-container{
         width: 50px;
         height: 50px;
@@ -1833,7 +1778,7 @@ nav{
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
-        flex-direction: row;
+        flex-direction: row-reverse;
     }
 
     .intro-container > .chamada-container {
@@ -1860,7 +1805,7 @@ nav{
         display: flex;
         top: 35px;
         width: 90%;
-        height: 65vh;
+        /*height: 65vh;*/
         margin: auto;
         margin-top: 35px;
         margin-bottom: 35px;
@@ -1871,14 +1816,14 @@ nav{
         line-height: 1.5;
     }
 
-    .sistema-funcionaparamim-container {
+ /*   .sistema-funcionaparamim-container {
         display: flex;
         width: auto;
         height: 65vh;
         margin: 35px auto;
         padding: 5px;
         flex-direction: row;
-    }
+    }*/
 
     .pq-sistema-funcionaparamim-container {
         display: inline-flex;
@@ -1887,23 +1832,24 @@ nav{
         font-size: 1.2em;
         flex-direction: column;
     }
-
+/*
     .sistema-funcionaparamim-container > .motivos-do-sistema-container {
         display: inline-flex;
         width: 60%;
         flex-wrap: wrap;
         align-content: flex-start;
         flex-direction: row;
-    }
+        justify-content: center;
+    }*/
 
-    .cards-motivos-do-sistema {
+    /*.cards-motivos-do-sistema {
         width: 46%;
-    }
+    }*/
 
-    .cards-motivos-do-sistema > p {
+   /* .cards-motivos-do-sistema > p {
         font-size: 1em;
         line-height: 1.3;
-    }
+    }*/
 
     .cards-convencimento-container{
         width: 100%;
@@ -1945,10 +1891,10 @@ nav{
         top: -30px;
     }
 
-    .pra-voce-que-deseja-item-container{
+    /*.pra-voce-que-deseja-item-container{
         width: 100%;
         font-size: 0.8em;
-    }
+    }*/
 
     .pra-voce-que-deseja-h1-container {
         font-size: 0.9em;
@@ -1965,10 +1911,9 @@ nav{
     }
 
     .vantagens-cliente-container > .cards-container-servicos {
-        display: inline-flex;
         border-radius: 5px;
         box-shadow: 0px 0px 2px 0px #d86722;
-        height: 39vh;
+        /*height: 39vh;*/
         width: 48%;
         margin: 8px;
         padding: 15px;
@@ -1976,21 +1921,20 @@ nav{
         opacity: 1;
     }
 
-    .vantagens-cliente-container > .cards-container-servicos:hover{
+    /*.vantagens-cliente-container > .cards-container-servicos:hover{
         height: 40vh;
-    }
+    }*/
 
     .cards-container-servicos > img {
         position: relative;
         display: inline-flex;
-        top: 30px;
         width: 60px;
         height: 60px;
     }
 
-    .cards-container-servicos > h3{
+    /*.cards-container-servicos > h3{
         font-size: 1.2em;
-    }
+    }*/
 
     .cards-container-servicos > p{
         top: 30px;
@@ -2115,16 +2059,16 @@ nav{
         font-size: 1.4em;
     }
 
-    .h1-funcionaparamim-container{
+/*    .h1-funcionaparamim-container{
         margin-top: 150px;
-    }
+    }*/
     .sistema-funcionaparamim-container{
         margin-bottom: 120px;
     }
 
-    .cards-motivos-do-sistema > p {
+    /*.cards-motivos-do-sistema > p {
         font-size: 1.3em;
-    }
+    }*/
 
     .cards-container > img {
         top: -10px;
@@ -2211,25 +2155,25 @@ nav{
         margin-top: 750px;
     }
 
-    .sistema-container{
+    /*.sistema-container{
         height: 43vh;
-    }
+    }*/
 
     .sistema-funcionaparamim-container{
         width: 90%;
     }
 
-    .h1-funcionaparamim-container {
+/*    .h1-funcionaparamim-container {
         margin-top: 195px;
-    }
+    }*/
 
     .cards-motivos-do-sistema{
         margin: 9px;
     }
-    .cards-motivos-do-sistema > p {
+    /*.cards-motivos-do-sistema > p {
         font-size: 1.5em;
         line-height: 1;
-    }
+    }*/
 
     .cards-motivos-do-sistema > p {
         width: 87%;
@@ -2268,13 +2212,9 @@ nav{
     }
 
     .vantagens-cliente-container > .cards-container-servicos{
-        width: 48%;
+        width: 40%;
         margin-left: 17px;
-        height: 25vh;
-    }
-
-    .vantagens-cliente-container > .cards-container-servicos:hover{
-        height: 26vh;
+        /*height: 60vh;*/
     }
 
     .cards-container-servicos > p {
