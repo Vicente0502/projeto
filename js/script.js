@@ -26,4 +26,7 @@ var swiper = new Swiper(".slide-content", {
             slidesPerView: 3,
         },
     },
+    autoplay: {
+      delay: 5000,
+    },
   });
