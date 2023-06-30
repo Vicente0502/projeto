@@ -46,6 +46,41 @@
     transform-origin: left;
 }
 
+/* Dropdown dos produtos */
+
+.link-navbar > i{
+    margin-top: 5px;
+    margin-left: 4px;
+}
+
+.dropdown-produtos{
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    border-radius: 5px;
+    margin-top: 5px;
+    z-index: 1;
+}
+
+.dropdown-produtos a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-produtos a:hover {
+    background-color: #dddddd;
+}
+  
+.show {
+    display: block;
+}
+
 /* Efeito ao passar o mouse sobre as palavras */
 
 /* Gestão */
@@ -307,8 +342,8 @@ nav{
     width: 85%;
     height: 60vh;
     margin: auto;
-    margin-top: 35px;
-    margin-bottom: 35px;
+    margin-top: 135px;
+    margin-bottom: 135px;
     flex-direction: row-reverse;
 }
 
@@ -350,6 +385,8 @@ nav{
     width: auto;
     display: flex;
     justify-content: space-evenly;
+    background-color: #ffaa00c4;
+    border-radius: 50px 0px;
 }
 
 .solucao_logos{
@@ -359,10 +396,10 @@ nav{
 
 .solucao_container {
     text-align: center;
-    background-color: #ffaa00c4;
     border-radius: 10px;
     width: 45%;
     font-size: 1.4em;
+    margin-top: 160px;
 }
 
 .solucao1_container > h2{
@@ -372,8 +409,12 @@ nav{
 /*Carrosel Apolo*/
 
 .carrosel {
-    width: 50%;
+    width: 55%;
     margin-right: 5px;
+    background-image: url('../icones/novos icones/bck_carroseul.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 
@@ -386,9 +427,36 @@ nav{
     color: #D5B35D;
 }
 
-.carrosel_container{
-    box-shadow: -8px -9px 2px 0px;
-    border-radius: 15px;
+.carrosel_container > iframe{
+    border-radius: 5px;
+    width: 68%;
+    height: 43vh;
+    margin-top: 170px;
+    margin-left: 165px;
+    box-shadow: -1px -1px 0px 8px;
+}
+
+.btn-prev{
+    background-image: url('../icones/novos icones/prev-btn2.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 5%;
+    height: 5vh;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-next{
+    background-image: url('../icones/novos icones/next-btn.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 5%;
+    height: 5vh;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    margin-left: 30px;
 }
 
 /* DIV O SISTEMA FUNCIONA PARA MIM E PARA QUEM É INDICADO */
@@ -396,7 +464,7 @@ nav{
     display: flex;
     width: 85%;
     height: 80vh;
-    margin: 300px auto;
+    /*margin: 200px auto;*/
     padding: 5px;
 }
 
@@ -435,7 +503,7 @@ nav{
 
 .motivos-do-sistema-container > p{
     font-size: 1.4em;
-    width: 70%;
+    width: 100%;
     text-align: justify;
     position: relative;
     top: 20px;
@@ -444,12 +512,10 @@ nav{
 
 /* Cards com motivos do sistema */
 .cards-motivos-do-sistema{
-    width: 40%;
-    padding: 10px;
-    height: 15vh;
-    margin: 15px;
+    width: 45%;
+    height: 17vh;
     position: relative;
-    top: 15px;
+    top: 35px;
 }
 
 .cards-motivos-do-sistema > p{
@@ -458,7 +524,7 @@ nav{
     font-size: 1.3em;
     left: 57px;
     top: -60px;
-    width: 100%;
+    width: 80%;
 }
 
 
@@ -521,8 +587,8 @@ nav{
 }
 
 .pra-voce-que-deseja-item-container{
-    width: 85%;
-    font-size: 0.4em;
+    width: 100%;
+    font-size: 0.8em;
 }
 
 .pra-voce-que-deseja-list-container > ul,li{
@@ -537,6 +603,7 @@ nav{
 
 .pra-voce-que-deseja-item-container > li > p{
     bottom: 15px;
+    line-height: 2;
     position: relative;
 }
 
@@ -596,7 +663,7 @@ nav{
 /* Configurando tamanho de divs */
 .eventoDiv {
     display: flex;
-    margin: auto;
+    margin: 85px auto;
     width: 85%;
     height: 70vh;
     margin-top: 20px;
@@ -739,7 +806,7 @@ nav{
 
 .perguntas-frequentes{
     width: 70%;
-    margin: 35px auto;
+    margin: 85px auto;
     padding: 25px;
 }
 
@@ -1134,16 +1201,16 @@ nav{
     }
 
 
-    .sistema-container {
+    /*.sistema-container {
         display: grid;
         grid-template-rows: auto auto;
-        /* min-height: 320px; */
+        /* min-height: 320px; 
         width: 100%;
         height: auto;
         margin: 0px;
         padding-bottom: 10px;
-        /* background-color: #211e2d; */
-    }
+        /* background-color: #211e2d; 
+    }*/
 
     .sistema-container-txt {
         order: 1;
@@ -1614,15 +1681,15 @@ nav{
         height: 75vh;
     }
 
-    .sistema-container {
+    /*.sistema-container {
         display: flex;
         top: 35px;
         width: 85%;
-        /*height: 65vh;*/
+        /*height: 65vh;
         margin: auto;
         margin-top: 35px;
         margin-bottom: 35px;
-    }
+    }/*
 
     /*.h1-funcionaparamim-container {
         margin-top: 120px;
@@ -1684,7 +1751,7 @@ nav{
 
     .eventoDiv {
         display: flex;
-        margin: auto;
+        margin: 150px auto;
         width: auto;
         height: auto;
     }
@@ -1801,15 +1868,15 @@ nav{
         line-height: 1.5;
     }
 
-    .sistema-container {
+    /**.sistema-container {
         display: flex;
         top: 35px;
         width: 90%;
-        /*height: 65vh;*/
+        /*height: 65vh;
         margin: auto;
         margin-top: 35px;
         margin-bottom: 35px;
-    }
+    }*/
 
     .sistema-container-txt > p{
         font-size: 1.2em;
@@ -1904,11 +1971,11 @@ nav{
         font-size: auto;
     }
 
-    .pra-voce-que-deseja-item-container > li > p{
+    /*.pra-voce-que-deseja-item-container > li > p{
         bottom: 10px;
         line-height: 2;
         font-size: 1.4em;
-    }
+    }*/
 
     .vantagens-cliente-container > .cards-container-servicos {
         border-radius: 5px;
@@ -2062,9 +2129,10 @@ nav{
 /*    .h1-funcionaparamim-container{
         margin-top: 150px;
     }*/
-    .sistema-funcionaparamim-container{
+
+    /*.sistema-funcionaparamim-container{
         margin-bottom: 120px;
-    }
+    }*/
 
     /*.cards-motivos-do-sistema > p {
         font-size: 1.3em;
@@ -2256,9 +2324,9 @@ nav{
   }
 
 @media (min-width: 1920px){
-    .sistema-funcionaparamim-container{
+    /*.sistema-funcionaparamim-container{
         margin-bottom: 105px;
-    }
+    }*/
 
     .quemsomos-container{
         width: 85%;

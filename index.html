@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="icones/icone-menor.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Sol Sistemas</title>
 </head>
 <body>
@@ -22,7 +23,12 @@
                         <a class="link-navbar" href="#">Quem somos?</a>
                     </li>
                     <li>
-                        <a class="link-navbar" href="#">Produtos</a>
+                        <a class="link-navbar" href="#" onclick="dropdown()">Produtos <i class="fa fa-caret-down"></i></a>
+                        <div class="dropdown-produtos" id="dropdown">
+                            <a href="#">Crediário</a>
+                            <a href="#">Clipp</a>
+                            <a href="#">Apolo</a>
+                          </div>
                     </li>
                     <li>
                         <a class="link-navbar" href="#">Contato</a>
@@ -67,29 +73,29 @@
             <!--Solução ideal-->
             <div class="solucao animar">
                 <div class="solucao_container">
-                    <h2>A SOLUCÃO IDEAL PARA O SEU NEGÓCIO</h2>
-                    <div class="solucao_logos"><img src="icones/novos icones/teste.png" alt="Ilustração atopeças"><p>Autopeças</p></div>
-                    <div class="solucao_logos"><img src="icones/novos icones/teste.png" alt="Ilustração atopeças"><p>Autopeças</p></div>
-                    <div class="solucao_logos"><img src="icones/novos icones/teste.png" alt="Ilustração atopeças"><p>Autopeças</p></div>
-                    <div class="solucao_logos"><img src="icones/novos icones/teste.png" alt="Ilustração atopeças"><p>Autopeças</p></div>
-                    <div class="solucao_logos"><img src="icones/novos icones/teste.png" alt="Ilustração atopeças"><p>Autopeças</p></div>
-                    <div class="solucao_logos"><img src="icones/novos icones/teste.png" alt="Ilustração atopeças"><p>Autopeças</p></div>
-                    <div class="solucao_logos"><img src="icones/novos icones/teste.png" alt="Ilustração atopeças"><p>Autopeças</p></div>
-                    <div class="solucao_logos"><img src="icones/novos icones/teste.png" alt="Ilustração atopeças"><p>Autopeças</p></div>
-                    <div class="solucao_logos"><img src="icones/novos icones/teste.png" alt="Ilustração atopeças"><p>Autopeças</p></div>
-                    <div class="solucao_logos"><img src="icones/novos icones/teste.png" alt="Ilustração atopeças"><p>Autopeças</p></div>
+                    <h2>A <span class="span">SOLUÇÃO IDEAL</span> PARA O SEU NEGÓCIO</h2>
+                    <div class="solucao_logos"><img src="icones/novos icones/autopecas.png" alt="Ilustração autopeças"><p>Autopeças</p></div>
+                    <div class="solucao_logos"><img src="icones/novos icones/calcados.png" alt="Ilustração calcados"><p>Calçados</p></div>
+                    <div class="solucao_logos"><img src="icones/novos icones/roupas.png" alt="Ilustração roupas"><p>Roupas</p></div>
+                    <div class="solucao_logos"><img src="icones/novos icones/mercado.png" alt="Ilustração mercados"><p>Mercados</p></div>
+                    <div class="solucao_logos"><img src="icones/novos icones/otica.png" alt="Ilustração oticas"><p>Óticas</p></div>
+                    <div class="solucao_logos"><img src="icones/novos icones/distribuidora.png" alt="Ilustração distribuidora"><p>Distribuidoras</p></div>
+                    <div class="solucao_logos"><img src="icones/novos icones/distribuidora.png" alt="Ilustração distribuidora"><p>Distribuidoras</p></div>
+                    <div class="solucao_logos"><img src="icones/novos icones/distribuidora.png" alt="Ilustração distribuidora"><p>Distribuidoras</p></div>
+                    <div class="solucao_logos"><img src="icones/novos icones/construcao.png" alt="Ilustração construcao"><p>Materiais de Construção</p></div>
                 </div>
 
                 <div class="carrosel">
                     <div class="carrosel_container">
+                        <!--<button class="btn-prev"></button>-->
                         <iframe width="560" height="315" src="https://www.youtube.com/embed/w759b5ief5s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> 
+                        <!--<button class="btn-next"></button>-->
                     </div>
                 </div>
             </div>
 
             <!-- POR QUE O SISTEMA FUNCIONA PARA VOCÊ -->
             <div class="sistema-funcionaparamim-container animar">
-
                     <div class="pq-sistema-funcionaparamim-container-img">
                         <img src="icones/novos icones/funciona2.png" alt="ilustracao">
                     </div>
@@ -145,25 +151,7 @@
                     <p>Além de ser a mentoria mais completa do mercado é a que tem um dos menores preços e pagamento facilitado em até 12x sem juros. Alunos comprometidos já tem resultados nas primeiras semanas e meses da mentoria e acabam pagando tudo com o que aprendeu dentro do Conversão Extrema.</p>
                 </div>
             </div>
-            <!-- LISTA DE MOTIVOS -->
-            <div class="pra-voce-que-deseja-container animar">
-                <div class="pra-voce-que-deseja-h1-container"><h1>O sistema Apolo é exatamente para você que deseja:</h1></div>
-                <div class="pra-voce-que-deseja-list-container">
-                    <ul>
-                        <div class="pra-voce-que-deseja-item-container">
-                            <li class="item"><p>Realizar o cadastro completo de seus clientes</p></li>
-                            <li class="item"><p>Operar vendas de forma ágil</p></li>
-                            <li class="item"><p>Verificar a entrada e saída de mercadoria</p></li>
-                            <li class="item"><p>Gerenciar as despesas da sua empresa</p></li>
-                            <li class="item"><p>Monitorar a entrada e saída financeira do seu caixa</p></li>
-                            <li class="item"><p>Produzir seus produtos a partir de itens cadastrados em estoque</p></li>
-                            <li class="item"><p>Realizar o cadastro completo de seu estoque</p></li>
-                            <li class="item"><p>Gerenciar os valores a receber</p></li>
-                            <li class="item"><p>Realizar cadastro de usuários e funcionários</p></li>
-                            <li class="item"><p>Ter todas as informações salvas por meio de backups diários</p></li></div>
-                    </ul>
-                </div>
-            </div>
+
             <!-- CARDS COM ACESSO A SERVIÇOS -->
             <div class="vantagens-cliente-container animar">
                 <div class="h1-vantagens-cliente-container">
@@ -171,7 +159,7 @@
                 </div>
                 <div class="cards-container-servicos">
                     <img src="icones/Union-1-2.svg" alt="icone">
-                    <h3>Assinatura</h3>
+                    <h3>Licença</h3>
                     <div class="pra-voce-que-deseja-list-container">
                         <ul>
                             <div class="pra-voce-que-deseja-item-container">
@@ -180,7 +168,7 @@
                                 <li class="item"><p>Verificar a entrada e saída de mercadoria</p></li>
                                 <li class="item"><p>Gerenciar as despesas da sua empresa</p></li>
                                 <li class="item"><p>Monitorar a entrada e saída financeira do seu caixa</p></li>
-                                <li class="item"><p>Produzir seus produtos a partir de itens cadastrados em estoque</p></li>
+                                <li class="item"><p>Produzir seus produtos a partir de itens cadastrados</p></li>
                                 <li class="item"><p>Realizar o cadastro completo de seu estoque</p></li>
                                 <li class="item"><p>Gerenciar os valores a receber</p></li>
                                 <li class="item"><p>Realizar cadastro de usuários e funcionários</p></li>
@@ -191,7 +179,7 @@
 
                 <div class="cards-container-servicos">
                     <img src="icones/Union-6.svg" alt="icone">
-                    <h3>Licença</h3>
+                    <h3>Assinatura</h3>
                     <div class="pra-voce-que-deseja-list-container">
                         <ul>
                             <div class="pra-voce-que-deseja-item-container">
@@ -200,7 +188,7 @@
                                 <li class="item"><p>Verificar a entrada e saída de mercadoria</p></li>
                                 <li class="item"><p>Gerenciar as despesas da sua empresa</p></li>
                                 <li class="item"><p>Monitorar a entrada e saída financeira do seu caixa</p></li>
-                                <li class="item"><p>Produzir seus produtos a partir de itens cadastrados em estoque</p></li>
+                                <li class="item"><p>Produzir seus produtos a partir de itens cadastrados</p></li>
                                 <li class="item"><p>Realizar o cadastro completo de seu estoque</p></li>
                                 <li class="item"><p>Gerenciar os valores a receber</p></li>
                                 <li class="item"><p>Realizar cadastro de usuários e funcionários</p></li>
@@ -479,7 +467,21 @@
 
             window.addEventListener('resize', animateAnimar); // Atualizar informações de posição dos elementos quando a janela é redimensionada
 
+            /* FUNÇÃO DDROPDOWN MENU NAVBAR*/
 
+            function dropdown() {
+                document.getElementById("dropdown").classList.toggle("show");
+            }
+
+            // Close the dropdown if the user clicks outside of it
+            window.onclick = function(e) {
+            if (!e.target.matches('.link-navbar')) {
+            var myDropdown = document.getElementById("dropdown");
+                if (myDropdown.classList.contains('show')) {
+                myDropdown.classList.remove('show');
+                }
+            }
+            }
         </script>
 
         <!-- <script>
