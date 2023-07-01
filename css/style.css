@@ -198,6 +198,7 @@ nav{
 }
 
 .main {
+    width: 100%;
     grid-area: main; 
     /* background-color: lightgreen;  */
     padding: 16px; 
@@ -262,11 +263,20 @@ nav{
 }
 
 .chamada-container{
-    width: 45%;
-    height: 65%;
+    width: 40%;
     margin: 5px;
+    margin-left: 85px;
+    text-align: center;
+    line-height: 100px;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.chamada-container > p{
     text-align: justify;
-    line-height: 30px;
+    width: 80%;
+    margin-top: 55px;
 }
 
 /* Animação do carregamento da página da classe .introcontainer  */
@@ -282,7 +292,7 @@ nav{
     }
 }
 
-/* Ajustes de margens e tamanho de textos */
+/* Ajustes de margens e tamanho de textos 
 .chamada-container > p{
     margin-top: 15px;
     font-size: 1.1em;
@@ -290,13 +300,17 @@ nav{
 
 .chamada-container > h1{
     margin-top: 80px;
-}
+}*/
 
 /* CONFIGURAÇÃO DO VÍDEO */
 .video-container{
     margin: 35px auto;
-    width: 51%;
+    width: 48%;
     height: 75vh;
+    background-image: url('../icones/novos icones/back_intro2.png');
+    background-repeat: no-repeat;
+    background-size: inherit;
+    background-position-x: 180px;
 }
 
 .video-container > iframe{
@@ -305,6 +319,12 @@ nav{
     border-radius: 10px;
     width: 100%;
     height: 100%;
+}
+
+.video-container > img{
+    position: relative;
+    top: 180px;
+    right: 90px;
 }
 
 /* CONFIGURAÇÃO DO BOTÃO */
@@ -339,17 +359,23 @@ nav{
 .sistema-container{
     display: flex;
     top: 35px;
-    width: 85%;
+    width: auto;
     height: 60vh;
     margin: auto;
     margin-top: 135px;
     margin-bottom: 135px;
     flex-direction: row-reverse;
+    background-image: url('../icones/novos icones/background.png');
+    background-position: unset;
+    background-repeat: repeat-y;
+    background-size: inherit;
+    background-position-y: -107px;
+    background-position-x: 102px;
 }
 
 .sistema-container-txt{
     display: inline-block;
-    width: 50%;
+    width: 42%;
     height: 50vh;
     text-align: justify;
     padding: 10px;
@@ -370,10 +396,11 @@ nav{
     height: auto;
     display: inline-flex;
     align-items: center;
+    justify-content: center;
 }
 
 .sistema-container-img > img{
-    width: 100%;
+    width: 55%;
     height: auto;
 }
 
@@ -399,7 +426,7 @@ nav{
     border-radius: 10px;
     width: 45%;
     font-size: 1.4em;
-    margin-top: 160px;
+    margin-top: 100px;
 }
 
 .solucao1_container > h2{
@@ -516,6 +543,7 @@ nav{
     height: 17vh;
     position: relative;
     top: 35px;
+    margin: 20px;
 }
 
 .cards-motivos-do-sistema > p{
@@ -567,6 +595,7 @@ nav{
     width: 75%;
     bottom: 35px;
 }
+
 /* LISTA DE MOTIVOS PARA VOCÊ QUE DESEJA */
 .pra-voce-que-deseja-container{
     margin: 35px auto;
@@ -630,7 +659,7 @@ nav{
     width: 40%;
     border-radius: 5px;
     box-shadow: 0px 0px 2px 0px #d86722;
-    height: 80vh;
+    height: 85vh;
     margin: 20px;
     padding: 15px;
     transition: 0.5s;
@@ -855,6 +884,152 @@ nav{
     align-items: center;
     align-content: center;
 }
+ /* Card slider */
+
+<<<<<<< HEAD
+ .slide-container {
+=======
+ /* Card slider */
+
+ .slide-container {
+    display: flex;
+    max-width: 1120px;
+    min-height: 400px;
+    width: 100%;
+    padding: 40px 0;
+ }
+
+ .swiper-container {
+    display: flex;
+ }
+
+ .slide-content {
+    margin: 0 40px;
+    overflow: hidden;
+    border-radius: 25px;
+ }
+
+ .card {
+    border-radius: 25px;
+    background-color: #f8f8f8;
+ }
+
+ .image-content, .card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 14px;
+ }
+
+ .image-content {
+    position: relative;
+    row-gap: 5px;
+    padding: 25px 0;
+ }
+
+ .overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #ffaa00c4;
+    border-radius: 25px 25px 0 25px;
+ }
+
+ .overlay::before, .overlay::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: -40px;
+    height: 40px;
+    width: 40px;
+    background-color: #ffaa00c4;
+ }
+
+ .overlay::after {
+    border-radius: 0 25px 0 0;
+    background-color: #f8f8f8;
+ }
+
+ .card-image {
+    position: relative;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background-color: #fff;
+    padding: 3px;
+}
+
+.card-image .card-img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #ffaa00c4;
+}
+
+.name {
+    font-size: 18px;
+    font-weight: 500;
+    color: #333;
+}
+
+.description {
+    font-size: 14px;
+    color: #707070;
+    text-align: center;
+}
+
+.button {
+    border: none;
+    font-size: 16px;
+    color: #fff;
+    padding: 8px 16px;
+    background-color: #ffaa00c4;
+    border-radius: 6px;
+    margin: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.button:hover {
+    background-color: #fff;
+    color: #ffaa00c4;
+    border: 1px solid #ffaa00c4;
+}
+
+.swiper-navBtn {
+    color: #6e93f7;
+    transition: color 0.3s ease;
+}
+
+.swiper-navBtn:hover {
+    color: #4070f4;
+}
+
+.swiper-navBtn::before, .swiper-navBtn::after {
+    font-size: 40px;
+}
+
+.swiper-button-next {
+    right: 0;
+}
+
+.swiper-button-prev {
+    left: 0;
+}
+
+.swiper-pagination-bullet {
+    background-color: #6393f7 !important;
+    opacity: 1 !important;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #4070f4 !important; 
+}
+
+/* Card slider fim */
 
 /* CSS dos Depoimentos com vídeo  */
 
@@ -868,67 +1043,144 @@ nav{
   }
   
   .depoimento-container {
+>>>>>>> dc4fdc6b527106dfbdc2022e9521903f3e93fa41
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 40px;
-  }
-  
-  .depoimento {
-    background-color: #fff;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin: 10px;
-    padding: 5px;
-    width: 275px;
-  }
-
-  .depoimento > img {
-    border-radius: 50%;
-    margin-bottom: 20px;
-    border: 2px solid #7898e89b;
-  }
-
-  .depoimento p {
-    font-size: 16px;
-    line-height: 1.5;
-    margin-bottom: 20px;
-  } 
-
-  .depoimento > video {
+    max-width: 1120px;
+    min-height: 400px;
     width: 100%;
-    border-radius: 5%;
-  }
-  
-  .client-name {
-    font-style: italic;
-  }
+    padding: 40px 0;
+ }
 
-  /* CSS depoimento com texto */
+ .swiper-container {
+    display: flex;
+ }
 
-  .depoimento-text {
-    background-color: #fff;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin: 10px;
-    padding: 5px;
-    width: 270px;
-  }
+ .slide-content {
+    margin: 0 40px;
+    overflow: hidden;
+    border-radius: 25px;
+ }
 
-  .depoimento-text > img {
+ .card {
+    border-radius: 25px;
+    background-color: #f8f8f8;
+ }
+
+ .image-content, .card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 14px;
+ }
+
+ .image-content {
+    position: relative;
+    row-gap: 5px;
+    padding: 25px 0;
+ }
+
+ .overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #ffaa00c4;
+    border-radius: 25px 25px 0 25px;
+ }
+
+ .overlay::before, .overlay::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: -40px;
+    height: 40px;
+    width: 40px;
+    background-color: #ffaa00c4;
+ }
+
+ .overlay::after {
+    border-radius: 0 25px 0 0;
+    background-color: #f8f8f8;
+ }
+
+ .card-image {
+    position: relative;
+    height: 150px;
+    width: 150px;
     border-radius: 50%;
-    margin-bottom: 20px;
-    border: 2px solid #7898e89b;
-  }
+    background-color: #fff;
+    padding: 3px;
+}
 
-  .depoimento-text p {
+.card-image .card-img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #ffaa00c4;
+}
+
+.name {
+    font-size: 18px;
+    font-weight: 500;
+    color: #333;
+}
+
+.description {
+    font-size: 14px;
+    color: #707070;
+    text-align: center;
+}
+
+.button {
+    border: none;
     font-size: 16px;
-    line-height: 1.5;
-    margin-bottom: 20px;
-  } 
-  
+    color: #fff;
+    padding: 8px 16px;
+    background-color: #ffaa00c4;
+    border-radius: 6px;
+    margin: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.button:hover {
+    background-color: #fff;
+    color: #ffaa00c4;
+    border: 1px solid #ffaa00c4;
+}
+
+.swiper-navBtn {
+    color: #6e93f7;
+    transition: color 0.3s ease;
+}
+
+.swiper-navBtn:hover {
+    color: #4070f4;
+}
+
+.swiper-navBtn::before, .swiper-navBtn::after {
+    font-size: 40px;
+}
+
+.swiper-button-next {
+    right: 0;
+}
+
+.swiper-button-prev {
+    left: 0;
+}
+
+.swiper-pagination-bullet {
+    background-color: #6393f7 !important;
+    opacity: 1 !important;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #4070f4 !important; 
+}
+
   /* CSS footer da página */
 
   .footer{
@@ -1142,7 +1394,7 @@ nav{
     }
 
     .main {
-        width: 99%;
+        width: 100%;
     }
 
     .button-whatsapp-container {
@@ -1629,6 +1881,17 @@ nav{
         text-align: justify;
     }
 
+    /* Depoimentos carrosel */
+    /* .slide-content {
+        margin: 0 10px;
+    }
+
+    .swiper-navBtn {
+        display: none;
+    } */
+
+    /* Depoimentos carrosel FIM */
+
     .depoimento-section {
         margin: 0px auto;
     }
@@ -1715,9 +1978,9 @@ nav{
         justify-content: space-between;
     }
 */
-    .cards-motivos-do-sistema{
+    /*.cards-motivos-do-sistema{
         margin: 7px;
-    }
+    }*/
 
     .cards-convencimento-container{
         width: auto;
@@ -1777,6 +2040,17 @@ nav{
         width: 45%;
         line-height: 1.5;
     }
+
+    /* Depoimentos carrosel */
+    /* .slide-content {
+        margin: 0 10px;
+    }
+    
+    .swiper-navBtn {
+        display: none;
+    } */
+    
+    /* Depoimentos carrosel FIM */
 
     .footer{
         font-size: 1em;
@@ -2235,9 +2509,10 @@ nav{
         margin-top: 195px;
     }*/
 
-    .cards-motivos-do-sistema{
+    /*.cards-motivos-do-sistema{
         margin: 9px;
-    }
+    }*/
+
     /*.cards-motivos-do-sistema > p {
         font-size: 1.5em;
         line-height: 1;
