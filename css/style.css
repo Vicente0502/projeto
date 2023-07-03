@@ -1007,11 +1007,11 @@ nav{
 }
 
 .swiper-button-next {
-    right: 0;
+    right: 0 !important;
 }
 
 .swiper-button-prev {
-    left: 0;
+    left: 0 !important;
 }
 
 .swiper-pagination-bullet {
