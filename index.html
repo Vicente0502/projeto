@@ -19,28 +19,33 @@
         <header class="header">
             <nav>
                 <a class="logo" href="#"></a>
-                <ul class="navbar-list">
-                    <li>
-                        <a class="link-navbar" href="#">Home</a>
-                    </li>
-                    <li>
-                        <a class="link-navbar" href="#">Quem somos?</a>
-                    </li>
-                    <li>
-                        <a class="link-navbar" href="#" onclick="dropdown()">Produtos <i class="fa fa-caret-down"></i></a>
-                        <div class="dropdown-produtos" id="dropdown">
-                            <a href="#">Crediário</a>
-                            <a href="#">Clipp</a>
-                            <a href="#">Apolo</a>
-                          </div>
-                    </li>
-                    <li>
-                        <a class="link-navbar" href="#">Contato</a>
-                    </li>
-                    <li>
-                        <a href="https://wa.me/c/558835123188"><button class="btn-navbar"><img src="icones/novos icones/whats_navbar.png" alt="">Entre em contato</button></a>
-                    </li>
-                </ul>
+
+                <div class="nav-links">
+                    <ul class="navbar-list">
+                        <li>
+                            <a class="link-navbar" href="#">Home</a>
+                        </li>
+                        <li>
+                            <a class="link-navbar" href="#">Quem somos?</a>
+                        </li>
+                        <li>
+                            <a class="link-navbar" href="#" onclick="dropdown()">Produtos <i class="fa fa-caret-down"></i></a>
+                            <div class="dropdown-produtos" id="dropdown">
+                                <a href="#">Crediário</a>
+                                <a href="#">Clipp</a>
+                                <a href="#">Apolo</a>
+                              </div>
+                        </li>
+                        <li>
+                            <a class="link-navbar" href="#">Contato</a>
+                        </li>
+                        <li>
+                            <a href="https://wa.me/c/558835123188"><button class="btn-navbar"><img src="icones/novos icones/whats_navbar.png" alt="">Entre em contato</button></a>
+                        </li>
+                    </ul>
+                </div>
+
+                <img src="icones/menu-arredondado-50.png" alt="menu hamburger" class="menu-hamburger">
             </nav>
         </header>
         <main class="main">
@@ -102,17 +107,17 @@
                     <div class="solucao_logos"><img src="icones/novos icones/roupas.png" alt="Ilustração roupas"><p>Roupas</p></div>
                     <div class="solucao_logos"><img src="icones/novos icones/mercado.png" alt="Ilustração mercados"><p>Mercados</p></div>
                     <div class="solucao_logos"><img src="icones/novos icones/otica.png" alt="Ilustração oticas"><p>Óticas</p></div>
-                    <div class="solucao_logos"><img src="icones/novos icones/moveis-e-eletros.png" alt="Ilustração moveis e eletros"><p>Moveis e eletros</p></div>
                     <div class="solucao_logos"><img src="icones/novos icones/papelaria.png" alt="Ilustração bijuterias"><p>Bijuterias</p></div>
                     <div class="solucao_logos"><img src="icones/novos icones/papelaria.png" alt="Ilustração papelaria"><p>Papelaria</p></div>   
                     <div class="solucao_logos"><img src="icones/novos icones/construcao.png" alt="Ilustração frigorifico"><p>Frigorífico</p></div>
+                    <div class="solucao_logos"><img src="icones/novos icones/moveis-e-eletros.png" alt="Ilustração moveis e eletros"><p>Moveis e eletros</p></div>
                     <div class="solucao_logos"><img src="icones/novos icones/construcao.png" alt="Ilustração construcao"><p>Materiais de Construção</p></div>
                 </div>
 
                 <div class="carrosel">
                     <div class="carrosel_container">
                         <!--<button class="btn-prev"></button>-->
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/w759b5ief5s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> 
+                        <iframe src="https://www.youtube.com/embed/w759b5ief5s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> 
                         <!--<button class="btn-next"></button>-->
                     </div>
                 </div>
@@ -120,17 +125,16 @@
 
             <!-- POR QUE O SISTEMA FUNCIONA PARA VOCÊ -->
             <div class="sistema-funcionaparamim-container animar">
-                    <div class="pq-sistema-funcionaparamim-container-img">
-                        <img src="icones/novos icones/funciona2.png" alt="ilustracao">
-                    </div>
+                <div class="pq-sistema-funcionaparamim-container-img">
+                    <img src="icones/novos icones/funciona2.png" alt="ilustracao">
+                </div>
 
                 <div class="motivos-do-sistema-container">
                     <div class="h1-funcionaparamim-container animar">
                         <h1>O sistema Apolo <span class="span">funciona</span> pra mim?</h1>
                     </div>
-                    <p>O sistema Apolo fornece informações precisas e atualizadas sobre as várias áreas da sua empresa, como finanças, operações, recursos humanos e vendas.
+                    <p>O sistema Apolo fornece informações precisas e atualizadas sobre as várias áreas da sua empresa, como finanças, operações, recursos humanos e vendas. Essas informações auxiliam na tomada de decisões informadas e estratégicas.</p>
 
-                        Essas informações auxiliam na tomada de decisões informadas e estratégicas.</p>
                     <div class="cards-motivos-do-sistema">
                         <img src="icones/CONFIGURAÇÃO.png" alt="">
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio ea dicta laborum voluptates totam ex officia nihil quas?</p>
@@ -482,44 +486,47 @@
                     <!-- <img src="icones/logo branca.png" alt="Logo Sol sistemas"> -->
                 </div>
                 <!-- links de navegação da PÁGINA -->
-                <div class="pagina">
-                    <div class="pagina-h2">
-                        <h2>Inicio</h2>
+                <div class="pagina_localizacao">
+                    <div class="pagina">
+                        <div class="pagina-h2">
+                            <h2>Inicio</h2>
+                        </div>
+    
+                        <ul class="list-link">
+                            <li class="pagina-link">
+                                    <a href="#"><p>Home</p></a>
+                            </li>
+    
+                            <li class="pagina-link">
+                                    <a href="#"><p>Produtos</p></a>
+                            </li>
+    
+                            <li class="pagina-link">
+                                    <a href="#"><p>Sobre nós</p></a>
+                            </li>
+    
+                            <li class="pagina-link">
+                                    <a href="#"><p>Fale Conosco</p></a>
+                            </li>
+                            
+                        </ul>
                     </div>
-
-                    <ul class="list-link">
-                        <li class="pagina-link">
-                                <a href="#"><p>Home</p></a>
-                        </li>
-
-                        <li class="pagina-link">
-                                <a href="#"><p>Produtos</p></a>
-                        </li>
-
-                        <li class="pagina-link">
-                                <a href="#"><p>Sobre nós</p></a>
-                        </li>
-
-                        <li class="pagina-link">
-                                <a href="#"><p>Fale Conosco</p></a>
-                        </li>
+                    <!-- Informações de LOCALIZAÇÃO -->
+                    <div class="localizacao">
+                        <div class="localizacao-h2">
+                            <h2>Localização</h2>
+                        </div>
+    
+                        <a href="https://goo.gl/maps/NgQfU3JpLSoCf18o9" target="_blank">
+                            <p>Rua do Cruzeiro, 957 </p>
+                            <p>São Miguel</p>
+                            <p>Juazeiro do Norte - CE</p>
+                            <p>(88) 3512-3188</p>
+                        </a>
                         
-                    </ul>
-                </div>
-                <!-- Informações de LOCALIZAÇÃO -->
-                <div class="localizacao">
-                    <div class="localizacao-h2">
-                        <h2>Localização</h2>
                     </div>
-
-                    <a href="https://goo.gl/maps/NgQfU3JpLSoCf18o9" target="_blank">
-                        <p>Rua do Cruzeiro, 957 </p>
-                        <p>São Miguel</p>
-                        <p>Juazeiro do Norte - CE</p>
-                        <p>(88) 3512-3188</p>
-                    </a>
-                    
                 </div>
+                
                 <!-- Informações de REDES SOCIAIS -->
                 <div class="redes-sociais">
                     <h2>Nos acompanhe</h2>
@@ -644,4 +651,15 @@
     <script src="js/swiper-bundle.min.js"></script>
     <!-- JavaScript -->
     <script src="js/script.js"></script>
+
+    <script>
+        const menuHamburger = document.querySelector(".menu-hamburger");
+        const navLinks = document.querySelector(".nav-links");
+        const menuIcon = document.querySelector(".menu-icon");
+    
+        menuHamburger.addEventListener('click', () => {
+          navLinks.classList.toggle('mobile-menu');
+          menuIcon.classList.toggle('open');
+        });
+      </script>
 </html>

@@ -53,6 +53,15 @@
     margin-left: 4px;
 }
 
+.menu-hamburger {
+    display: none;
+    width: 35px;
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    z-index: 5001;
+}
+
 .dropdown-produtos{
     display: none;
     position: absolute;
@@ -329,7 +338,8 @@ nav{
 /* CONFIGURAÇÃO DO BOTÃO */
 .btn{
     display: flex;
-    justify-content: center;
+    justify-content: center; 
+    align-items: center;
     margin-top: 40px;
 }
 
@@ -444,14 +454,14 @@ nav{
 }
 
 
-.carrosel > h3 {
+/* .carrosel > h3 {
     text-align: center;
-    background-color: #211e2d;
+    background-color: #2d1e1e;
     border-radius: 15px 15px 0px 0px;
     padding: 10px;
     width: 100%;
     color: #D5B35D;
-}
+} */
 
 .carrosel_container > iframe{
     border-radius: 5px;
@@ -973,6 +983,8 @@ nav{
     font-size: 14px;
     color: #707070;
     text-align: center;
+    z-index: 100;
+    margin-bottom: 10px;
 }
 
 .button {
@@ -1063,9 +1075,14 @@ nav{
 
   /* CSS Links de retorno */
 
+  .pagina_localizacao {
+    display: flex;
+    width: 50%;
+  }
+
   .pagina{
     border-right: 1px solid;
-    width: 15%;
+    width: 50%;
     padding: 15px;
     height: 30vh;
   }
@@ -1163,8 +1180,9 @@ nav{
 
   /* CSS localização */
   .localizacao{
-    width: 22%;
+    width: 50%;
     height: 30vh;
+    margin-left: 40px;
     padding: 15px;
     border-right: 1px solid;
   }
@@ -1221,10 +1239,670 @@ nav{
 
    /* RESPONSIVIDADE PARA PEQUENAS TELAS */
 
-   @media (min-width: 320px) and (max-width: 600px){
+    @media (max-width: 767px) {
+
+    .header {
+        width: 100%;
+        height: auto;
+        background-color: white;
+    }
+
+    .header nav {
+        width: 100%;
+        display: flex;
+        padding: 0; 
+        position: fixed;
+        z-index: 400;
+    }
+    .nav-links {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        top: 0;
+        left: 0;
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        padding: 0;
+        background-color: rgba(255, 255, 255, 0.20);
+        backdrop-filter: blur(7px);
+        z-index: 500;
+        flex-wrap: wrap;
+        margin-left: -100%;
+    }
+
+    .navbar-list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-links.mobile-menu {
+        margin-left: 0;
+    }
+
+    .navbar-list li {
+        margin: 25px 0;
+        font-size: 1.2em;
+        font-weight: bold;
+    }
+
+    .menu-hamburger {
+        display: block;
+    }
+
+    
+    /* .main {
+        display: none;
+    } */
+
+    .button-whatsapp-container {
+        display: none;
+    }
+
+    .intro-container {
+        display: grid;
+        grid-template-rows: auto auto;
+        width: 100%;
+        margin: 0px;
+        height: auto;
+        padding: 10px;
+        padding-bottom: 10px;
+        margin-top: 75px;
+    }
+
+    .video-container {
+        order: 2;
+        width: 100%;
+        height: 100%;
+        margin: auto;
+        background-image: none;
+    }
+
+    .video-container > img {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        top: 0px;
+        right: 0px;
+        margin: 10px 0px;
+    }
+
+    .chamada-container {
+        display: flex;
+        order: 1;
+        width: 100%;
+        height: 100%;
+        margin: auto;
+    }
+
+    .chamada-container > img {
+        width: 100%;
+    }
+
+    .chamada-container > p {
+        width: 95%;
+        margin: 15px;
+        font-size: 1rem;
+        line-height: 1.45;
+    }
+
+    .btn {
+        align-items: center;
+        font-size: 0.7em;
+        line-height: 1.45;
+        margin: 10px 0px;
+    }
+
+    .button-landingpage {
+        width: 100%;
+    }
+
+    .sistema-container {
+        display: grid;
+        grid-template-rows: auto auto;
+        width: 100%;
+        margin: 0px;
+        height: auto;
+        padding: 10px;
+        padding-bottom: 10px;
+        top: 0px;
+        width: auto;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        flex-direction: row-reverse;
+        background-image: none;
+    }
+
+    .sistema-container-txt {
+        order: 1;
+        display: inline-block;
+        width: 100%;
+        height: auto;
+        text-align: center;
+        margin: 10px;
+        padding: 0;
+    }
+
+    .pra-voce-que-deseja-list-container {
+        width: 95%;
+        margin: 10px 0px 0px 10px;
+        padding-left: 10px;
+    }
+
+    .pra-voce-que-deseja-list-container {
+        margin: 0;
+    }
+
+    .sistema-container-img {
+        order: 2;
+        width: 100%;
+    }
+
+    .sistema-container-img > img {
+        width: 90%;
+    }
+
+    .solucao {
+        display: grid;
+        grid-template-rows: auto auto;
+        width: 100%;
+        height: auto;
+        margin: 20px 0px;
+        justify-content: center;
+        border-radius: 15px;
+    }
+
+    .solucao_container {
+        order: 1;
+        width: 100%;
+        height: auto;
+        margin: 10px 0px;
+        flex-wrap: wrap;
+    }
+
+    .solucao_container > h2 {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+    }
+
+    .solucao_logos {
+        display: inline-block;
+        margin: 10px;
+        width: 40%;
+    }
+
+    .solucao_logos > p {
+        font-size: 1.2rem;
+    }
+
+    .carrosel {
+        order: 2;
+        display: flex;
+        width: 100%;
+        height: auto;
+        /* flex-wrap: nowrap; */
+        justify-content: center;
+        margin: 20px 0px;
+        background-image: none;
+    }
+
+    .carrosel_container {
+        display: flex;
+        width: 100%;
+        height: auto;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .carrosel_container > iframe{
+        border-radius: 5px;
+        width: 95%;
+        height: 190px;
+        margin: 0px;
+        box-shadow: 0px 0px 0px 8px;
+    }
+
+    .sistema-funcionaparamim-container {
+        display: grid;
+        grid-template-rows: auto auto;
+        width: 100%;
+        height: auto;
+        margin: 0px;
+    }
+
+    .pq-sistema-funcionaparamim-container-img {
+        order: 2;
+        width: 100%;
+        height: auto;
+        background-size: cover;
+        background-position: center;  
+    }
+
+    .pq-sistema-funcionaparamim-container-img > img {
+        width: 100%;
+        height: auto;
+    }
+
+    .motivos-do-sistema-container {
+        order: 1;
+        width: 100%;
+        height: auto;
+        flex-wrap: wrap;
+        padding: 0;
+    }
+
+    .h1-funcionaparamim-container{
+        text-align: center;
+        font-size: 1rem;
+        width: 100%;
+    }
+
+    .motivos-do-sistema-container > p {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: justify;
+        font-size: 1.2rem;
+        width: 100%;
+        top: 0px;
+        margin: 10px 0px;
+        position: initial;
+    }
+
+    .cards-motivos-do-sistema {
+        display: flex;
+        width: 100%;
+        height: auto;
+        line-height: 1.2;
+        margin: 20px 0px;
+        position: initial;
+    }
+
+    .cards-motivos-do-sistema > img {
+        width: 10%;
+        height: 45%;
+    }
+
+    .cards-motivos-do-sistema > p {
+        width: 85%;
+        text-align: justify;
+        font-size: 1rem;
+        margin-left: 10px;
+        text-align: justify;
+        font-size: 1rem;
+        left: 0px;
+        top: 0px;  
+    }
+
+    .cards-convencimento-container {
+        width: 100%;
+        height: auto;
+        margin: 0;
+        padding: 0;
+        position: initial;
+    }
+
+    .cards-container {
+        display: flex;
+        width: 100%;
+        height: auto;
+        flex-wrap: wrap;
+        margin: 20px 10px 10px 10px;
+    }
+
+    .cards-container > img {
+        display: flex;
+        width: 10%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    .cards-container > h3 {
+        display: flex;
+        width: 90%;
+        position: initial;
+        top: 0;
+        left: 0;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .cards-container > p {
+        font-size: 1rem;
+        position: relative;
+        text-align: justify;
+        left: 0px;
+        width: 100%;
+        bottom: 0px;
+        line-height: 1.2;
+    }
+
+    .vantagens-cliente-container {
+        display: inline;
+        width: 100%;
+        margin: 10px;
+        padding: 0;
+    }
+
+    .h1-vantagens-cliente-container {
+        width: 100%;
+        margin-bottom: 0;
+    }
+
+    .h1-vantagens-cliente-container > h1 {
+        font-size: 1.4rem;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .cards-container-servicos {
+        width: 100%;
+        height: auto;
+        margin: 10px 0;
+        padding: 0;
+    }
+
+    .cards-container-servicos > img {
+        margin-top: 10px;
+    }
+
+    .cards-container-servicos > h3 {
+        font-size: 1.4rem;
+    }
+
+    .pra-voce-que-deseja-list-container {
+        display: flex;
+        width: 100%;
+        height: auto;
+        justify-content: center;
+        align-content: center;
+        margin: 0;
+    }
+
+    .pra-voce-que-deseja-item-container {
+        width: 100%;
+        height: auto;
+    }
+
+    .item {
+        width: 80%;
+        justify-content: center;
+        align-content: center;
+        margin-left: 40px;
+
+        bottom: 0px;
+        line-height: 1.4;
+        position: initial;
+    }
+
+    .eventoDiv {
+        display: grid;
+        grid-template-rows: auto auto;
+        width: 100%;
+        height: auto;
+        margin: 10px 0 20px 0;
+    }
+
+    .mentoriaDiv {
+        order: 1;
+        width: 100%;
+        height: auto;
+        margin: 10px 0;
+    }
+
+    .mentoriaDiv > h2 {
+        width: 95%;
+        font-size: 1.3rem;
+        text-align: center;
+    }
+
+    .mentoriaDiv > p {
+        width: 90%;
+        height: auto;
+        font-size: 1.1rem;
+        padding: 10px;
+        margin: auto;
+    }
+
+     .iframeDiv {
+        order: 2;
+        width: 100%;
+        height: auto;
+    }
+
+    .video {
+        width: 100%;
+        height: auto;
+    }
+
+    .perguntas-frequentes {
+        width: 100%;
+        margin: 20px 0 30px 0;
+        padding: 0;
+    }
+
+    .perguntas-frequentes > h1 {
+        width: 100%;
+        font-size: 1.5rem;
+        margin-bottom: 0;
+        margin: 10px 0;
+    }
+
+    .perguntas-frequentes-details {
+        display: flex;
+        width: 100%;
+        height: auto;
+        margin: 10px 0px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .perguntas-frequentes-details > p {
+        text-align: justify;
+        margin: 10px 0px;
+    }
+
+    .slide-container {
+        padding: 20px 0;
+        max-width: 300px !important;
+        min-height: 300px;
+    }
+    
+    .slide-content {
+        margin: 0 10px;
+    }
+    
+    .image-content,
+    .card-content {
+        padding: 5px;
+    }
+    
+    .card-image {
+        height: 100px;
+        width: 100px;
+    }
+    
+    .card-image .card-img {
+        border-width: 3px;
+    }
+    
+    .name {
+        font-size: 16px;
+    }
+    
+    .description {
+        font-size: 12px;
+    }
+
+    .swiper-pagination {
+        height: auto;
+    }
+    
+    .swiper-pagination-bullet {
+        margin: auto;
+    }
+      
+      
+   /* .slide-container {
+        display: flex !important;
+        justify-content: center;
+        align-content: center;
+        flex-wrap: wrap;
+
+        max-width: 320px;
+        min-height: 450px;
+        margin: 0 !important;
+    }
+
+    .slide-content {
+        width: 100%;
+        margin: 0;
+    }
+
+    .card {
+        display: flex;
+        width: 100%;
+    } */
+    
+
+    /* 
+
+    .card-wrapper {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        width: 80% !important;
+        background-color: #000;
+    } */
+
+    .swiper-button-next, .swiper-button-prev {
+        display: none !important;
+    }
+    
+    .footer {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        height: auto;
+        margin: auto;
+        padding: 0px;
+        align-items: flex-start;
+        font-size: 1em;
+        justify-content: flex-start;
+    }
+
+    .logo-footer {
+        width: 30px;
+        height: 30px;
+    }
+
+    .pagina_localizacao {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        margin: auto;
+        padding: 10px;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .pagina {
+        width: 50%;
+        height: auto;
+        padding: 5px 0px 0px 10px;
+    }
+
+    .pagina-h2 {
+        font-size: 0.7rem;
+    }
+
+    .list-link {
+        font-size: 0.6rem;
+        margin-top: 5px;
+    }
+
+    .pagina-link{
+        margin-top: 5px;
+        left: 5px;
+      }
+
+    .localizacao {
+        width: 50%;
+        height: auto;
+        border: none;
+        margin: 0px;
+        padding: 0px 0px 0px 15px;
+    }
+
+    .localizacao-h2 {
+        font-size: 0.6rem;
+        margin-bottom: 0px;
+    }
+    .localizacao > a {
+        font-size: 0.6rem;
+    }
+
+    .redes-sociais {
+        width: 100%;
+        height: auto;
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .redes-sociais > h2 {
+        font-size: 0.9rem;
+        margin-bottom: 0px;
+    }
+
+    .localizacao > a {
+        font-size: 0.5rem;
+    }
+
+    .redes-sociais > ul {
+        width: 100%;
+        height: auto;
+    }
+
+    .redes {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        margin: 10px 0px;
+        padding: 0;
+    }
+    .redes > a {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .link img {
+        width: 40%;
+        height: 30%;
+      }
+
+    .btn-footer {
+        margin: 10px;
+        width: 40%;
+        height: auto;
+    }
+
+    .footer-bar {
+        width: 100%;
+        height: auto;
+        font-size: 0.7rem;
+    }
+
+}
+    
+
+   /* @media (min-width: 320px) and (max-width: 600px){
+
     .container {
         box-sizing: border-box;
-        /* overflow-x: hidden; */
     }
 
     .header {
@@ -1249,10 +1927,8 @@ nav{
         width: 100%;
         margin: 0px;
         height: auto;
-        /* min-height: 830px; */
         padding: 10px;
         padding-bottom: 10px;
-        /* background-color: #211e2d; */
     }
 
     .video-container {
@@ -1266,7 +1942,6 @@ nav{
         width: 98%;
         height: 100%;
         margin: auto;
-        /* background-color: blue; */
       }
 
 
@@ -1291,20 +1966,19 @@ nav{
         padding: 20px 20px 10px 20px;
         justify-content: center;
         align-content: center;
-        /* background-color: #000; */
     }
 
 
-    /*.sistema-container {
+    .sistema-container {
         display: grid;
         grid-template-rows: auto auto;
-        /* min-height: 320px; 
+        min-height: 320px; 
         width: 100%;
         height: auto;
         margin: 0px;
         padding-bottom: 10px;
-        /* background-color: #211e2d; 
-    }*/
+        background-color: #211e2d; 
+    }
 
     .sistema-container-txt {
         order: 1;
@@ -1347,25 +2021,22 @@ nav{
         margin-top: 0px;
         margin: 0px auto;
         padding-bottom: 10px;
-        /* background-color: #8f2323; */
     }
 
-/*    .h1-funcionaparamim-container > h1 {
+   .h1-funcionaparamim-container > h1 {
         margin-bottom: 10px;
         width: 100%;
         font-size: 1.3rem;
         margin: 0px auto;
-    }*/
+    }
 
     .sistema-funcionaparamim-container {
         display: grid;
         width: 100%;
         margin: 0px;
         height: auto;
-        /* min-height: 900px; */
         padding: 10px 0px;
         grid-template-rows: auto;
-        /* background-color: #3b21a1; */
     }
 
     .pq-sistema-funcionaparamim-container {
@@ -1387,15 +2058,12 @@ nav{
         order: 2;
         width: 341px;
         height: auto;
-        /* height: 150px; */
     }
 
     .motivos-do-sistema-container {
         order: 3;
         width: 100%;
         height: auto;
-        /* min-height: 520px; */
-        /* background-color: #a12190; */
         flex-wrap: wrap;
         margin: auto;
         padding: 0px;
@@ -1434,7 +2102,6 @@ nav{
         margin: 0;
         padding: 10px 0px;
         border-top: 1px solid #0000001f;
-        /* background-color: #3b21a1; */
     }
 
     .cards-container {
@@ -1443,19 +2110,13 @@ nav{
         display: flex;
         margin: auto;
         padding-bottom: 10px;
-        /* 
-        margin: 0px;
-        height: 0px; */
-        /* min-height: 200px; */
         font-size: 0.5rem;
         flex-wrap: wrap;
-        /* background-color: #8f2323; */
     }
 
     .cards-container > h3 {
         width: 80%;
         height: auto;
-        /* height: 40px; */
         text-align: justify;
         position: static;
         margin-left: 5px;
@@ -1470,7 +2131,6 @@ nav{
         width: 90%;
         position: static;
         font-size: 0.6rem;
-        /* background-color: #d1afaf; */
     }
 
     .cards-container > img {
@@ -1485,7 +2145,6 @@ nav{
         width: 100%;
         border-bottom: 1px solid #0000001f;
         border-top: 1px solid #0000001f;
-        /* background-color: #211e2d; */
     }
 
     .pra-voce-que-deseja-h1-container{
@@ -1568,19 +2227,16 @@ nav{
         grid-template-rows: auto auto;
         width: 100%;
         height: auto;
-        /* min-height: 700px; */
         margin: auto;
         margin-top: 10px;
         flex-wrap: wrap;
         padding-bottom: 10px;
-        /* background-color: #211e2d; */
     }
 
     .iframeDiv{
         order: 1;
         width: 100%;
         height: auto;
-        /* height: 250px; */
         margin: auto;
         margin: 0px;
     }
@@ -1592,14 +2248,12 @@ nav{
     .video {
         width: 100%;
         height: auto;
-        /* max-height: 200px; */
     }
 
     .mentoriaDiv {
         order: 2;
         width: 100%;
         height: auto;
-        /* height: 400px; */
         margin: 0px;
         padding: 0px;
     }
@@ -1696,7 +2350,6 @@ nav{
         width: 100%;
         height: auto;
         margin: auto;
-        /* background-color: #211e2d; */
     }
 
     .quemsomos_img {
@@ -1736,11 +2389,11 @@ nav{
         display: none;
     }
 
-   }
+   } */
 
   /* RESPONSIVIDADE PARA TELAS PEQUENAS E LAPTOPS */
 
-  @media (min-width: 600px){
+  /* @media (min-width: 600px){
     .button-whatsapp-container{
         margin-top: 550px;
         margin-left: 90%;
@@ -1773,7 +2426,7 @@ nav{
         margin: 35px auto;
         width: 80%;
         height: 75vh;
-    }
+    } */
 
     /*.sistema-container {
         display: flex;
@@ -1813,7 +2466,7 @@ nav{
         margin: 7px;
     }*/
 
-    .cards-convencimento-container{
+    /* .cards-convencimento-container{
         width: auto;
     }
 
@@ -1831,19 +2484,18 @@ nav{
     .vantagens-cliente-container > .cards-container-servicos {
         border-radius: 5px;
         box-shadow: 0px 0px 2px 0px #d86722;
-        /*height: 28vh;*/
         width: auto;
         margin: 20px;
         padding: 15px;
         transition: 0.5s;
         opacity: 1;
-    }
+    } */
 
     /*.vantagens-cliente-container > .cards-container-servicos:hover {
         height: 29vh;
     }*/
 
-    .eventoDiv {
+    /* .eventoDiv {
         display: flex;
         margin: 150px auto;
         width: auto;
@@ -1872,22 +2524,21 @@ nav{
         line-height: 1.5;
     }
 
-    .footer{
+   .footer {
         font-size: 1em;
     }
 
     .footer > .logo-footer {
         display: none;
-    }
+    } */
 
-    .footer > .pagina {
+    /* .footer > .pagina {
         border-right: 1px solid;
         width: 20%;
-        /* padding: 15px; */
         height: 35vh;
-    }
+    } */
 
-    .footer > .localizacao {
+    /* .footer > .localizacao {
         width: 33%;
         height: 35vh;
         padding: 15px;
@@ -1904,7 +2555,7 @@ nav{
         align-items: center;
     }
 
-  }
+  } */
 
   /* RESPONSIVIDADE PARA TELAS MAIORES QUE 1024PX*/
 
@@ -2427,4 +3078,3 @@ nav{
         width: 85%;
     }
 }
-  
