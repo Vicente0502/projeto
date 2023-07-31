@@ -146,9 +146,9 @@
 
 /*configuração da logo na navbar*/
 .logo{
-    background-image: url('../icones/logo.png');
+    background-image: url('../icones/novos icones/logo.png');
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     background-position: center;
     display: flex;
     height: 7vh;
@@ -259,7 +259,6 @@ nav{
 
 /*  INICIO DO CONTEÚDO DO SITE*/
 .intro-container{
-    padding: 20px;
     margin: 10px auto;
     text-align: center;
     animation: up 2s 1;
@@ -271,8 +270,8 @@ nav{
 }
 
 .chamada-container{
-    width: 40%;
-    margin: 5px;
+    width: 35%;
+    margin: 50px auto;
     margin-left: 85px;
     text-align: center;
     line-height: 100px;
@@ -283,7 +282,7 @@ nav{
 
 .chamada-container > p{
     text-align: justify;
-    width: 80%;
+    width: 90%;
     margin-top: 55px;
 }
 
@@ -312,13 +311,13 @@ nav{
 
 /* CONFIGURAÇÃO DO VÍDEO */
 .video-container{
-    margin: 35px auto;
-    width: 48%;
-    height: 75vh;
-    background-image: url('../icones/novos icones/back_intro2.png');
+    margin: 0px auto;
+    width: 60%;
+    height: 80vh;
+    background-image: url('../icones/novos icones/background 2.jpg');
     background-repeat: no-repeat;
-    background-size: inherit;
-    background-position-x: 180px;
+    background-size: contain;
+    background-position-x: 450px;
 }
 
 .video-container > iframe{
@@ -571,7 +570,7 @@ nav{
 .cards-motivos-do-sistema > p{
     position: relative;
     text-align: justify;
-    font-size: 0.1rem;
+    font-size: 1.2rem;
     left: 57px;
     top: -60px;
     width: 80%;
@@ -1955,10 +1954,7 @@ nav{
 /* RESPONSIVIDADE PARA TELAS MAIORES QUE 1024PX */
 
 @media (min-width: 1024px) and (max-width: 1439px){
-    /*.main{
-        padding: 0px;
-    }
-*/
+
     .nav{
         justify-content: normal;
     }
@@ -1969,9 +1965,10 @@ nav{
     }
 
     .chamada-container{
-        width: 46%;
+        width: 75%;
         height: 70vh;
-        margin-left: 0px;
+        margin: 15px;
+        line-height: 0px;
     }
     
     .chamada-container > img{
@@ -1984,10 +1981,7 @@ nav{
     }
 
     .video-container{
-        background-size: 68%;
-        background-position-x: 128px;
-        height: 70vh;
-        width: 43%;
+        display: none;
     }
 
     .video-container > img{
@@ -2134,6 +2128,10 @@ nav{
         margin: 10px;
     }
 
+    .btn{
+        margin-left: -19px;
+    }
+
     .iframeDiv{
         width: 55%;
     }
@@ -2146,8 +2144,8 @@ nav{
         width: 53%;
     }
 
-    .swiper{
-        display: none;
+    .slide-container{
+        max-width: 940px;
     }
 
     .footer{
@@ -2160,17 +2158,20 @@ nav{
     }
 
     .pagina{
-        padding: 0px;
-        width: 22%;
+        padding: 30px;
+        width: 60%;
+    }
+
+    .list-link{
+        font-size: 1.1em;
     }
 
     .localizacao{
-        width: 26%;
-        padding: 0px;
+        width: 60%;
+        padding: 30px;
     }
 
     .localizacao > a > p{
-        font-size: 1em;
         margin: 0px;
     }
 
@@ -2184,7 +2185,29 @@ nav{
 
 @media (min-width: 1440px) and (max-width: 1679px){
     .chamada-container{
+        width: 85%;
         margin-left: 60px;
+        line-height: 45px;
+        margin: 20px auto;
+    }
+
+    .chamada-container > p {
+        font-size: 1.5em;
+    }
+
+    .video-container{
+        display: none;
+    }
+
+    .sistema-container{
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position-y: -53px;
+        background-position-x: 10px;
+    }
+
+    .sistema-container-img > img{
+        width: 65%;
     }
 
     .button-whatsapp-container {
@@ -2196,10 +2219,15 @@ nav{
 
     .sistema-funcionaparamim-container{
         margin-top: 180px;
+        width: 95%
     }
 
     .pq-sistema-funcionaparamim-container {
         font-size: 1.4em;
+    }
+
+    .pq-sistema-funcionaparamim-container-img > img{
+        width: 85%;
     }
 
     .cards-container > img {
@@ -2208,12 +2236,13 @@ nav{
 
     .cards-container > h3 {
         font-size: 1.4em;
-        left: 22px;
-        top: -35px;
+        left: 13px;
+        top: -55px;
     }
 
     .cards-container > p{
         font-size: 1.4em;
+        width: 90%;
     }
 
     .cards-convencimento-container{
@@ -2228,10 +2257,6 @@ nav{
         margin: 35px auto;
     }
 
-    .sistema-container-img > img{
-        width: 73%;
-    }
-
     .sistema-container-txt{
         width: 45%;
     }
@@ -2241,16 +2266,34 @@ nav{
     }
 
     .solucao{
-        height: 78vh;
-        margin: 25px;
+        height: 90vh;
+        width: 95%;
     }
 
-    .motivos-do-sistema-container > p{
-        font-size: 2em;
+    .solucao_container{
+        width: 60%;
+    }
+
+    .carrosel_container > iframe{
+        margin-top: 235px;
+        margin-left: 54px;
+        width: 83%;
+        height: 38vh;
+    }
+
+    .motivos-do-sistema-container{
+        width: 65%;
+    }
+
+    .cards-motivos-do-sistema{
+        width: 47%;
+        top: 65px;
+        margin: 10px;
     }
 
     .cards-motivos-do-sistema > p{
         font-size: 2em;
+        top: -43px;
     }
 
     .cards-container-servicos{
@@ -2258,21 +2301,19 @@ nav{
         height: 96vh;
     }
 
+    .btn-contrato{
+        width: 50%;
+    }
+
     .eventoDiv{
         margin: 54px;
         height: 60vh;
         font-size: 1em;
+        width: 95%;
     }
 
-    .carrosel_container > iframe{
-        margin-top: 185px;
-        margin-left: 80px;
-        width: 78%;
-        height: 39vh;
-    }
-
-    .chamada-container > p {
-        font-size: 1.7em;
+    .btn{
+        margin-left: -70px;
     }
 
     .pra-voce-que-deseja-list-container > ul, li{
@@ -2324,14 +2365,37 @@ nav{
         width: 50px;
         height: 50px;
     }
+
+    .logo-footer{
+        display: none;
+    }
+
+    .pagina_localizacao{
+        width: 60%;
+    }
 }
 
 /* RESPONSIVIDADE PARA TELAS MAIORES QUE 1680px */
 
 @media (min-width: 1680px) and (max-width: 1919px){
 
-    .intro-container > .chamada-container {
+    .intro-container{
+        margin: 0px;
+    }
+    
+    .chamada-container {
         height: 70vh;
+        line-height: 35px;
+    }
+
+    .chamada-container > p {
+        width: auto;
+        font-size: 1.2em;
+    }
+
+    .video-container{
+        width: 59.8%;
+        height: 79.5vh;
     }
 
     .button-whatsapp-container {
@@ -2340,16 +2404,38 @@ nav{
 
     .sistema-funcionaparamim-container{
         width: auto;
+        margin-top: 100px;
+    }
+
+    .pq-sistema-funcionaparamim-container-img > img {
+        width: 65%;
+    }
+
+    .motivos-do-sistema-container{
+        width: 61%;
+    }
+
+    .sistema-container{
+        background-position-x: 55px;
+    }
+
+    .sistema-container > img{
+        width: 61%;
+    }
+
+    .solucao_container{
+        width: 49%;
+    }
+
+    .carrosel_container{
+        height: 70vh;
     }
 
     .carrosel_container > iframe{
         margin-top: 222px;
-        margin-left: 90px;
-        width: 79%;
-    }
-
-    .h1-funcionaparamim-container{
-        font-size: 1.3em;
+        margin-left: 119px;
+        width: 69%;
+        height: 32vh;
     }
 
     .cards-motivos-do-sistema{
@@ -2363,10 +2449,11 @@ nav{
 
     .cards-convencimento-container {
         text-align: inherit;
+        width: auto;
     }
 
     .cards-container {
-        width: auto;
+        width: 42%;
     }
 
     .cards-container > p {
@@ -2378,11 +2465,16 @@ nav{
     .cards-container > h3 {
         top: -60px;
         left: 35px;
+        font-size: 1.5em;
     }
 
     .cards-container > img{
         width: 70px;
         height: 70px;
+    }
+
+    .pra-voce-que-deseja-list-container > ul, li{
+        font-size: 1.29em;
     }
 
     .pra-voce-que-deseja-container {
@@ -2391,6 +2483,10 @@ nav{
 
     .pra-voce-que-deseja-h1-container{
         font-size: 1.2em;
+    }
+
+    .btn-contrato{
+        width: 53%;
     }
 
     .vantagens-cliente-container > .cards-container-servicos{
@@ -2407,6 +2503,10 @@ nav{
     .eventoDiv {
         width: 95%;
         height: 55vh;
+    }
+
+    .btn{
+        margin-left: -60px;
     }
 
     .iframeDiv{
@@ -2430,7 +2530,7 @@ nav{
     }
 
     .footer > .logo-footer {
-        width: 20%;
+        width: 21%;
         height: 35vh;
         display: flex;
     }
@@ -2443,6 +2543,10 @@ nav{
         margin: auto;
     }
 
+    .button-footer{
+        font-size: 1em;
+    }
+
     .footer-bar{
         margin-top: 35px;
     }
@@ -2451,13 +2555,23 @@ nav{
 /* REPONSIVIDADE PARA TELAS MAIORES QUE 1920px */
 
 @media (min-width: 1920px){
+    .intro-container{
+        margin: 0px;
+    }
+
     .chamada-container{
         line-height: 35px;
     }
 
     .chamada-container p{
-        width: 85%;
+        width: 100%;
         font-size: 1.4em;
+    }
+
+    .video-container{
+        margin: auto;
+        height: 82.5vh;
+        background-position-x: 356px;
     }
 
     .sistema-container-img > img{
@@ -2469,16 +2583,18 @@ nav{
     }
 
     .solucao{
+        width: 95%;
+        height: 64vh;
         margin: 50px;
     }
     
-    .solucao-container{
-        width: 44%;
+    .solucao_container{
+        width: 40%;
     }
 
     .carrosel_container > iframe{
-        margin-top: 174px;
-        margin-left: 160px;
+        margin-top: 117px;
+        margin-left: 157px;
         width: 68%;
         height: 42vh;
     }
@@ -2500,6 +2616,10 @@ nav{
 
     .cards-convencimento-container{
         width: auto;
+    }
+
+    .cards-container{
+        width: 50%;
     }
 
     .cards-container > p{
@@ -2535,6 +2655,10 @@ nav{
         font-size: 1.6em;
     }
 
+    .btn{
+        margin-left: -70px;
+    }
+
     .perguntas-frequentes{
         width: 57%;
     }
@@ -2550,5 +2674,10 @@ nav{
     .redes-sociais{
         width: 22%;
     }
+
+    .button-footer{
+        font-size: 1.5rem;
+    }
+
 }
   
