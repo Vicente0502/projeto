@@ -933,7 +933,7 @@ nav{
  .slide-container {
     display: flex;
     max-width: 1120px;
-    min-height: 400px;
+    min-height: 450px;
     width: 100%;
     padding: 40px 0;
  }
@@ -1015,6 +1015,7 @@ nav{
 }
 
 .description {
+    min-height: 140px;
     font-size: 14px;
     color: #707070;
     text-align: center;
@@ -1431,7 +1432,7 @@ nav{
     }
 
     .btn-contrato {
-        width: 70%;
+        width: auto;
         height: auto;
         margin: 10px auto;
         padding: 20px;
@@ -1446,6 +1447,7 @@ nav{
     }
 
     .sistema-container-img {
+        display: none;
         order: 2;
         width: 100%;
     }
@@ -1523,6 +1525,7 @@ nav{
     }
 
     .pq-sistema-funcionaparamim-container-img {
+        display: none;
         order: 2;
         width: 100%;
         height: auto;
@@ -1541,12 +1544,14 @@ nav{
         height: auto;
         flex-wrap: wrap;
         padding: 0;
+        margin-bottom: 10px;
     }
 
     .h1-funcionaparamim-container{
         text-align: center;
         font-size: 1rem;
         width: 100%;
+        margin-bottom: 10px;
     }
 
     .motivos-do-sistema-container > p {
@@ -1572,18 +1577,17 @@ nav{
 
     .cards-motivos-do-sistema > img {
         width: 10%;
-        height: 45%;
+        height: 90%;
     }
 
     .cards-motivos-do-sistema > p {
         width: 85%;
-        text-align: justify;
         font-size: 1rem;
         margin-left: 10px;
         text-align: justify;
         font-size: 1rem;
         left: 0px;
-        top: 0px;  
+        top: 5px;  
     }
 
     .cards-convencimento-container {
@@ -1599,24 +1603,24 @@ nav{
         width: 100%;
         height: auto;
         flex-wrap: wrap;
-        margin: 20px 10px 10px 10px;
+        margin: 20px 10px 30px 10px;
     }
 
     .cards-container > img {
         display: flex;
         width: 10%;
         height: auto;
-        margin-bottom: 20px;
+        margin: auto;
     }
 
     .cards-container > h3 {
         display: flex;
-        width: 90%;
+        width: 85%;
         position: initial;
         top: 0;
         left: 0;
         text-align: center;
-        margin-bottom: 20px;
+        margin: auto;
     }
 
     .cards-container > p {
@@ -1627,6 +1631,7 @@ nav{
         width: 100%;
         bottom: 0px;
         line-height: 1.2;
+        margin-top: 20px;
     }
 
     .vantagens-cliente-container {
@@ -1637,8 +1642,8 @@ nav{
     }
 
     .h1-vantagens-cliente-container {
-        width: 95%;
-        margin-bottom: 0;
+        width: 93%;
+        margin-bottom: 20px;
     }
 
     .h1-vantagens-cliente-container > h1 {
@@ -1675,6 +1680,12 @@ nav{
         height: auto;
     }
 
+    .btn-contrato{
+        width: auto;
+        height: auto;
+        font-size: 1rem;
+    }
+
     .item {
         width: 80%;
         justify-content: center;
@@ -1691,7 +1702,7 @@ nav{
         grid-template-rows: auto auto;
         width: 95%;
         height: auto;
-        margin: 15px auto;
+        margin: 25px auto;
     }
 
     .mentoriaDiv {
@@ -1715,10 +1726,15 @@ nav{
         margin: auto;
     }
 
-        .iframeDiv {
+    .iframeDiv {
         order: 2;
         width: 100%;
         height: auto;
+        margin: 10px 0;
+    }
+
+    .iframeDiv h3 {
+        font-size: 1rem;
     }
 
     .video {
@@ -1728,7 +1744,7 @@ nav{
 
     .perguntas-frequentes {
         width: 95%;
-        margin: 20px auto;
+        margin: 30px auto;
         padding: 0;
     }
 
@@ -1782,7 +1798,7 @@ nav{
     }
     
     .description {
-        height: auto;
+        min-height: 150px;
         font-size: 0.8rem;
         padding: 15px 5px 10px;
     }
