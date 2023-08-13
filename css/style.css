@@ -1327,11 +1327,6 @@ nav{
         display: block;
     }
 
-    
-    /* .main {
-        display: none;
-    } */
-
     .button-whatsapp-container {
         display: none;
     }
@@ -1984,6 +1979,235 @@ nav{
     
 }
   
+/* RESPONSIVIDADE PARA TELAS MAIORES QUE 767PX  */
+
+@media (min-width: 768px) and (max-width: 1023px){
+    .nav{
+        justify-content: normal;
+    }
+
+    .button-whatsapp-container{
+        margin-top: 550px;
+        margin-left: 89%;
+    }
+
+    .chamada-container{
+        width: 75%;
+        height: 70vh;
+        margin: 15px;
+        line-height: 0px;
+    }
+    
+    .chamada-container > img{
+        width: 80%;
+    }
+
+    .chamada-container > p{
+        font-size: 1.2em;
+        line-height: 1.5;
+    }
+
+    .video-container{
+        display: none;
+    }
+
+    .video-container > img{
+        width: 90%;
+    }
+
+    .button-landingpage{
+        width: 102%;
+        height: 7vh;
+    }
+
+    .sistema-container{
+        background-repeat: no-repeat;
+        background-position-x: -100px;
+        background-position-y: -65px;
+        background-size: 45%;
+        height: 73vh;
+    }
+
+    .sistema-container-txt{
+        width: 55%;
+    }
+
+    .sistema-container-img > img{
+        width: 85%;
+    }
+
+    .solucao{
+        width: auto;
+        height: 126vh;
+        margin: 5px;
+        padding: 15px;
+    }
+
+    .solucao_container{
+        width: 52%;
+    }
+
+    .carrosel{
+        width: 61%;
+        background-size: 115%;
+    }
+
+    .carrosel_container > iframe{
+        margin-top: 355px;
+        margin-left: 56px;
+        width: 78%;
+        height: 33vh;
+    }
+
+   .sistema-funcionaparamim-container {
+        display: flex;
+        width: auto;
+        height: 75vh;
+        margin-top: 145px;
+        margin-bottom: 50px;
+        padding: 5px;
+        flex-direction: row;
+    }
+
+    .pq-sistema-funcionaparamim-container {
+        display: inline-flex;
+        width: 50%;
+        height: 60vh;
+        font-size: 1.2em;
+        flex-direction: column;
+    }
+
+    .pq-sistema-funcionaparamim-container-img > img{
+        width: 95%;
+    }
+
+    .sistema-funcionaparamim-container > .motivos-do-sistema-container {
+        display: inline-flex;
+        width: 65%;
+        flex-wrap: wrap;
+        align-content: flex-start;
+        flex-direction: row;
+        justify-content: center;
+        font-size: 0.8em;
+    }
+
+    .cards-motivos-do-sistema {
+        width: 42%;
+        font-size: 0.8em;
+    }
+
+    .cards-convencimento-container{
+        width: auto;
+        margin: auto;
+        flex-direction: column-reverse;
+    }
+
+    .vantagens-cliente-container {
+        width: 100%;
+        height: auto;
+        margin: 85px auto;
+        padding: 15px;
+    }
+
+    .cards-convencimento-container > .cards-container{
+        height: 35vh;
+        width: auto;
+        margin: 15px;
+    }
+
+
+    .cards-container > img {
+        display: inline-flex;
+        position: relative;
+        right: -19px;
+        top: 20px;
+        width: 60px;
+        height: 60px;
+    }
+
+    .cards-container > h3{
+        font-size: 1.3em;
+        text-align: justify;
+        left: 20px;
+        top: -35px;
+    }
+    
+    .cards-container > p{
+        left: 85px;
+        width: 85%;
+        top: -30px;
+        font-size: 1.2em;
+    }
+
+    .cards-container-servicos{
+        width: 44%;
+        height: 120vh;
+    }
+
+    .btn-contrato{
+        width: 70%;
+    }
+
+    .eventoDiv{
+        width: auto;
+        height: auto;
+        justify-content: center;
+        flex-direction: row;
+        margin: 10px;
+    }
+
+    .btn{
+        margin-left: -19px;
+    }
+
+    .iframeDiv{
+        width: 55%;
+    }
+
+    .video{
+        height: 90.5%;
+    }
+
+    .mentoriaDiv{
+        width: 53%;
+    }
+
+    .slide-container{
+        max-width: 940px;
+    }
+
+    .footer{
+        padding: 0px;
+        align-content: space-around;
+    }
+
+    .logo-footer{
+        display: none;
+    }
+
+    .pagina{
+        padding: 30px;
+        width: 60%;
+    }
+
+    .list-link{
+        font-size: 1.1em;
+    }
+
+    .localizacao{
+        width: 60%;
+        padding: 30px;
+    }
+
+    .localizacao > a > p{
+        margin: 0px;
+    }
+
+    .redes-sociais{
+        width: 30%;
+    }
+}
+
 /* RESPONSIVIDADE PARA TELAS MAIORES QUE 1024PX */
 
 @media (min-width: 1024px) and (max-width: 1439px){
@@ -2106,6 +2330,7 @@ nav{
     .cards-convencimento-container{
         width: auto;
         margin: auto;
+        flex-direction: column-reverse;
     }
 
     .vantagens-cliente-container {
@@ -2117,7 +2342,7 @@ nav{
 
     .cards-convencimento-container > .cards-container{
         height: 35vh;
-        width: 45%;
+        width: auto;
         margin: 15px;
     }
 
@@ -2132,9 +2357,9 @@ nav{
     }
 
     .cards-container > h3{
-        font-size: 1em;
+        font-size: 1.3em;
         text-align: justify;
-        left: 80px;
+        left: 20px;
         top: -35px;
     }
     
@@ -2142,6 +2367,7 @@ nav{
         left: 85px;
         width: 85%;
         top: -30px;
+        font-size: 1.2em;
     }
 
     .cards-container-servicos{
@@ -2436,12 +2662,21 @@ nav{
     }
 
     .sistema-funcionaparamim-container{
-        width: auto;
+        width: 95%;
         margin-top: 100px;
     }
 
     .pq-sistema-funcionaparamim-container-img > img {
         width: 65%;
+    }
+
+    .cards-motivos-do-sistema{
+        margin: 20px;
+    }
+
+    .cards-motivos-do-sistema > p {
+        width: 87%;
+        font-size: 2.3em;
     }
 
     .motivos-do-sistema-container{
@@ -2471,18 +2706,9 @@ nav{
         height: 32vh;
     }
 
-    .cards-motivos-do-sistema{
-        margin: 22px;
-    }
-
-    .cards-motivos-do-sistema > p {
-        width: 87%;
-        font-size: 2.3em;
-    }
-
     .cards-convencimento-container {
         text-align: inherit;
-        width: auto;
+        width: 95%;
     }
 
     .cards-container {
@@ -2648,7 +2874,7 @@ nav{
     }
 
     .cards-convencimento-container{
-        width: auto;
+        width: 90%;
     }
 
     .cards-container{
