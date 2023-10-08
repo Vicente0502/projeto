@@ -146,7 +146,7 @@
 
 /*configuração da logo na navbar*/
 .logo{
-    background-image: url('../icones/novos icones/logo.png');
+    background-image: url('../icones/logo.png');
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
@@ -314,7 +314,7 @@ nav{
     margin: 0px auto;
     width: 60%;
     height: 80vh;
-    background-image: url('../icones/novos icones/background 2.jpg');
+    background-image: url('../icones/background 2.jpg');
     background-repeat: no-repeat;
     background-size: contain;
     background-position-x: 450px;
@@ -372,7 +372,7 @@ nav{
     margin-top: 135px;
     margin-bottom: 135px;
     flex-direction: row-reverse;
-    background-image: url('../icones/novos icones/background.png');
+    background-image: url('../icones/background.png');
     background-position: unset;
     background-repeat: repeat-y;
     background-size: inherit;
@@ -454,10 +454,10 @@ nav{
 .carrosel {
     width: 55%;
     margin-right: 5px;
-    background-image: url('../icones/novos icones/bck_carroseul.png');
+    /*background-image: url('../icones/novos icones/bck_carroseul.png');
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: center;*/
 }
 
 
@@ -476,11 +476,11 @@ nav{
     height: 43vh;
     margin-top: 170px;
     margin-left: 165px;
-    box-shadow: -1px -1px 0px 8px;
+    box-shadow: 0px 1px 6px 2px;
 }
 
-.btn-prev{
-    background-image: url('../icones/novos icones/prev-btn2.png');
+/*.btn-prev{
+    background-image: url('../icones/prev-btn2.png');
     background-repeat: no-repeat;
     background-size: cover;
     width: 5%;
@@ -491,7 +491,7 @@ nav{
 }
 
 .btn-next{
-    background-image: url('../icones/novos icones/next-btn.png');
+    background-image: url('../icones/next-btn.png');
     background-repeat: no-repeat;
     background-size: cover;
     width: 5%;
@@ -501,7 +501,7 @@ nav{
     cursor: pointer;
     margin-left: 30px;
 }
-
+*/
 /* DIV O SISTEMA FUNCIONA PARA MIM E PARA QUEM É INDICADO */
 .sistema-funcionaparamim-container{
     display: flex;
@@ -543,7 +543,7 @@ nav{
     height: auto;
     padding: 10px;
     justify-content: flex-start;
-    align-content: flex-start;
+    align-content: center;
 }
 
 .motivos-do-sistema-container > p{
@@ -2039,24 +2039,26 @@ nav{
     .solucao{
         width: auto;
         height: 126vh;
-        margin: 5px;
+        margin: 30px;
         padding: 15px;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: nowrap;
     }
 
     .solucao_container{
-        width: 52%;
+        width: 83%;
     }
 
     .carrosel{
-        width: 61%;
-        background-size: 115%;
+        width: 80%;
     }
 
     .carrosel_container > iframe{
-        margin-top: 355px;
-        margin-left: 56px;
-        width: 78%;
-        height: 33vh;
+        width: 100%;
+        height: 51vh;
+        margin-top: 0px;
+        margin-left: 0px;
     }
 
    .sistema-funcionaparamim-container {
@@ -2141,7 +2143,7 @@ nav{
 
     .cards-container-servicos{
         width: 44%;
-        height: 120vh;
+        height: 85vh;
     }
 
     .btn-contrato{
@@ -2210,7 +2212,7 @@ nav{
 
 /* RESPONSIVIDADE PARA TELAS MAIORES QUE 1024PX */
 
-@media (min-width: 1024px) and (max-width: 1439px){
+@media (min-width: 1024px) and (max-width: 1360px){
 
     .nav{
         justify-content: normal;
@@ -2235,6 +2237,7 @@ nav{
     .chamada-container > p{
         font-size: 1.2em;
         line-height: 1.5;
+        margin-top: 30px;
     }
 
     .video-container{
@@ -2269,12 +2272,14 @@ nav{
     .solucao{
         width: auto;
         height: 126vh;
-        margin: 5px;
+        margin: 30px;
         padding: 15px;
+        flex-direction: column;
+        align-items: center;
     }
 
     .solucao_container{
-        width: 52%;
+        width: 73%;
     }
 
     .carrosel{
@@ -2283,10 +2288,10 @@ nav{
     }
 
     .carrosel_container > iframe{
-        margin-top: 355px;
-        margin-left: 56px;
-        width: 78%;
-        height: 33vh;
+        margin-top: 0px;
+        margin-left: 0px;
+        width: 100%;
+        height: 40vh;
     }
 
    .sistema-funcionaparamim-container {
@@ -2308,14 +2313,14 @@ nav{
     }
 
     .pq-sistema-funcionaparamim-container-img > img{
-        width: 95%;
+        width: 85%;
     }
 
     .sistema-funcionaparamim-container > .motivos-do-sistema-container {
         display: inline-flex;
         width: 65%;
         flex-wrap: wrap;
-        align-content: flex-start;
+        align-content: center;
         flex-direction: row;
         justify-content: center;
         font-size: 0.8em;
@@ -2330,7 +2335,6 @@ nav{
     .cards-convencimento-container{
         width: auto;
         margin: auto;
-        flex-direction: column-reverse;
     }
 
     .vantagens-cliente-container {
@@ -2341,7 +2345,7 @@ nav{
     }
 
     .cards-convencimento-container > .cards-container{
-        height: 35vh;
+        height: 20vh;
         width: auto;
         margin: 15px;
     }
@@ -2372,7 +2376,7 @@ nav{
 
     .cards-container-servicos{
         width: 44%;
-        height: 120vh;
+        height: 99vh;
     }
 
     .btn-contrato{
@@ -2440,18 +2444,141 @@ nav{
 
 }
 
+
+@media (min-width: 1360px) and (max-width: 1439px){
+    .intro-container{
+        width: auto;
+        margin: 0px;
+    }
+
+    .chamada-container{
+        width: 60%;
+        height: 80vh;
+        margin: 15px 0px;
+        line-height: 28px;
+    }
+
+    .chamada-container > img{
+        width: 65%;
+    }
+
+    .chamada-container > p{
+        width: 72%;
+        margin-top: 22px;
+    }
+
+    .btn{
+        margin-top: -50px;
+        font-size: 0.9em;
+    }
+
+    .video-container{
+        width: 40%;
+        background-position-x: 0px;
+    }
+
+    .sistema-container{
+        height: 69vh;
+        margin-top: 60px;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    .sistema-container-img > img{
+        width: 60%;
+    }
+
+    .pra-voce-que-deseja-item-container{
+        width: 93%;
+        font-size: 0.9em;
+    }
+
+    .solucao{
+        height: 140vh;
+        margin: 100px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .solucao_container{
+        width: 64%;
+    }
+
+    .carrosel{
+        width: 70%;
+    }
+
+    .carrosel_container > iframe{
+        width: 85%;
+        height: 49vh;
+        margin-left: 60px;
+        margin-top: 60px;
+    }
+
+    .sistema-funcionaparamim-container{
+        height: 85vh;
+        width: 95%;
+    }
+
+    .pq-sistema-funcionaparamim-container-img > img{
+        width: 70%;
+    }
+
+    .motivos-do-sistema-container{
+        width: 55%;
+        justify-content: center;
+        align-content: flex-start;
+    }
+
+    .cards-motivos-do-sistema{
+        width: 50%;
+        height: 15vh;
+        top: 56px;
+        margin: 0px;
+    }
+
+    .cards-motivos-do-sistema > p{
+        top: -45px;
+    }
+
+    .cards-convencimento-container{
+        flex-direction: column-reverse;
+    }
+
+    .cards-convencimento-container > .cards-container{
+        width: 85%;
+        margin: auto;
+        height: 25vh;
+    }
+
+    .cards-container-servicos{
+        height: 95vh;
+    }
+
+    .button-landingpage{
+        margin-top: 75px;
+        width: 110%;
+    }
+
+    .btn-contrato{
+        width: 62%;
+    }
+}
+
 /* RESPONSIVIDADE PARA TELAS MAIORES QUE 1440px */
 
-@media (min-width: 1440px) and (max-width: 1679px){
+@media (min-width: 1440px) and (max-width: 1680px){
     .chamada-container{
-        width: 85%;
+        width: 80%;
         margin-left: 60px;
         line-height: 45px;
         margin: 20px auto;
     }
 
     .chamada-container > p {
-        font-size: 1.5em;
+        font-size: 1.2em;
+        width: 84%;
+        margin-top: 10px;
     }
 
     .video-container{
@@ -2463,6 +2590,7 @@ nav{
         background-repeat: no-repeat;
         background-position-y: -53px;
         background-position-x: 10px;
+        height: 77vh;
     }
 
     .sistema-container-img > img{
@@ -2470,9 +2598,9 @@ nav{
     }
 
     .button-whatsapp-container {
-        width: 60px;
-        height: 60px;
-        margin-top: 655px;
+        width: 50px;
+        height: 50px;
+        margin-top: 590px;
         margin-left: 92%;
     }
 
@@ -2486,7 +2614,7 @@ nav{
     }
 
     .pq-sistema-funcionaparamim-container-img > img{
-        width: 85%;
+        width: 75%;
     }
 
     .cards-container > img {
@@ -2504,12 +2632,16 @@ nav{
         width: 90%;
     }
 
+    .cards-container{
+        width: 80%;
+    }
+
     .cards-convencimento-container{
         margin: 150px auto;;
     }
 
     .cards-convencimento-container > .cards-container {
-        height: 35vh;
+        height: 30vh;
     }
 
     .vantagens-cliente-container{
@@ -2557,7 +2689,7 @@ nav{
 
     .cards-container-servicos{
         width: 45%;
-        height: 96vh;
+        height: 105vh;
     }
 
     .btn-contrato{
@@ -2566,7 +2698,7 @@ nav{
 
     .eventoDiv{
         margin: 54px;
-        height: 60vh;
+        height: 75vh;
         font-size: 1em;
         width: 95%;
     }
@@ -2644,26 +2776,24 @@ nav{
     
     .chamada-container {
         height: 70vh;
+        width: 38%;
         line-height: 35px;
     }
 
     .chamada-container > p {
         width: auto;
+        margin-top: 13px;
         font-size: 1.2em;
     }
 
     .video-container{
-        width: 59.8%;
+        width: 56.8%;
         height: 79.5vh;
-    }
-
-    .button-whatsapp-container {
-        margin-top: 750px;
     }
 
     .sistema-funcionaparamim-container{
         width: 95%;
-        margin-top: 100px;
+        margin-top: 130px;
     }
 
     .pq-sistema-funcionaparamim-container-img > img {
@@ -2685,6 +2815,8 @@ nav{
 
     .sistema-container{
         background-position-x: 55px;
+        margin-top: 165px;
+        margin-bottom: 200px;
     }
 
     .sistema-container > img{
@@ -2700,15 +2832,16 @@ nav{
     }
 
     .carrosel_container > iframe{
-        margin-top: 222px;
+        margin-top: 100px;
         margin-left: 119px;
-        width: 69%;
-        height: 32vh;
+        width: 71%;
+        height: 46vh;
     }
 
     .cards-convencimento-container {
         text-align: inherit;
         width: 95%;
+        margin-top: 130px;
     }
 
     .cards-container {
@@ -2751,6 +2884,7 @@ nav{
     .vantagens-cliente-container > .cards-container-servicos{
         width: 40%;
         margin-left: 17px;
+        height: 93vh;
     }
 
     .cards-container-servicos > p {
@@ -2761,11 +2895,12 @@ nav{
 
     .eventoDiv {
         width: 95%;
-        height: 55vh;
+        height: 65vh;
     }
 
     .btn{
         margin-left: -60px;
+        margin-top: 23px;
     }
 
     .iframeDiv{
@@ -2789,7 +2924,7 @@ nav{
     }
 
     .footer > .logo-footer {
-        width: 21%;
+        width: 18%;
         height: 35vh;
         display: flex;
     }
